@@ -88,8 +88,9 @@ table {
   font-size: 2rem;
 }
 .main-page-header .hamburger:hover {
-  color: #E8B4B8;
-  transition: 0.5s ease-in-out;
+  color: #00ffeaf8;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.1);
 }
 .main-page-header .navigation-container {
   display: none;
@@ -105,7 +106,7 @@ table {
   font-family: sans-serif;
 }
 .main-page-header .main-navigation .main-navigation__link:hover {
-  color: #ffffff;
+  color: #00ffeaf8;
   -webkit-text-decoration: underline 2px;
           text-decoration: underline 2px;
   transition: 0.2s ease-in-out;
@@ -129,7 +130,7 @@ table {
     display: flex;
     flex-direction: column;
     margin-top: 5.1rem;
-    background-image: linear-gradient(to left, #1c1b29, #67595E, #1c1b29);
+    background-image: linear-gradient(to left, #1c1b29, #1c1b29);
   }
   .main-page-header .navigation-container .main-navigation .main-navigation__link {
     text-align: center;
@@ -141,7 +142,7 @@ table {
     color: #ffffff;
   }
   .main-page-header .navigation-container .main-navigation .main-navigation__link:hover {
-    color: #E8B4B8;
+    color: #00ffeaf8;
     background-color: #1c1b2979;
     margin: auto;
     align-items: center;

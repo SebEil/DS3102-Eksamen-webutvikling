@@ -5,6 +5,7 @@ $fourth: #E8B4B8;
 $gradient1: #6253e1;
 $gradient2: #852D91;
 $gradient3: #37c049;
+$primaryNeon: #00ffeaf8;
 
 .main-page-header{   
     background-image: linear-gradient(to left, $third,$primary,$third);
@@ -46,9 +47,10 @@ $gradient3: #37c049;
     }
 
     .hamburger:hover{
-        color:  $fourth;
+        color:  $primaryNeon;
         -webkit-transition: 0.5s ease-in-out;
-        transition: 0.5s ease-in-out;
+        transition: 0.2s ease-in-out;
+        transform: scale(1.1);
     }
 
     .navigation-container{
@@ -69,7 +71,7 @@ $gradient3: #37c049;
             
         }
         .main-navigation__link:hover{
-            color: $secondary;
+            color: $primaryNeon;
             text-decoration: underline 2px;
             -webkit-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
@@ -112,7 +114,7 @@ $gradient3: #37c049;
                 display: flex;
                 flex-direction: column;
                 margin-top: 5.1rem;
-                background-image: linear-gradient(to left, $third,$primary,$third);
+                background-image: linear-gradient(to left, $third,$third);
                 
                 
 
@@ -127,7 +129,7 @@ $gradient3: #37c049;
                 }
 
                 .main-navigation__link:hover{
-                        color: $fourth;
+                        color: $primaryNeon;
                         background-color: #1c1b2979;
                         margin: auto;
                         align-items: center;
