@@ -50,4 +50,103 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+.main-page-header {
+  background-image: linear-gradient(to left, #1c1b29, #67595E, #1c1b29);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*
+      Tablet og oppover
+  */
+}
+.main-page-header .logo {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+.main-page-header .logo .logoimg {
+  height: 50px;
+}
+.main-page-header .logo .logoimg:hover {
+  transform: scale(1.05);
+}
+.main-page-header .hamburger {
+  color: #ffffff;
+  padding: 1.6rem;
+  opacity: 1;
+  position: absolute;
+  right: 0px;
+  font-size: 2rem;
+}
+.main-page-header .hamburger:hover {
+  color: #E8B4B8;
+  transition: 0.5s ease-in-out;
+}
+.main-page-header .navigation-container {
+  display: none;
+  margin-right: 0px;
+}
+.main-page-header .main-navigation {
+  display: flex;
+  flex-direction: row;
+}
+.main-page-header .main-navigation .main-navigation__link {
+  padding: 2.1rem;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+.main-page-header .main-navigation .main-navigation__link:hover {
+  color: #ffffff;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+  transition: 0.2s ease-in-out;
+  font-family: sans-serif;
+  transform: scale(1.03);
+}
+@media screen and (min-width: 768px) {
+  .main-page-header .hamburger {
+    display: none;
+  }
+  .main-page-header .navigation-container {
+    display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .main-page-header .navigation-container {
+    display: none;
+    max-height: 5rem;
+  }
+  .main-page-header .navigation-container .main-navigation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5.1rem;
+    background-image: linear-gradient(to left, #1c1b29, #67595E, #1c1b29);
+  }
+  .main-page-header .navigation-container .main-navigation .main-navigation__link {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 0rem;
+    border: 1px solid #1c1b29;
+    color: #ffffff;
+  }
+  .main-page-header .navigation-container .main-navigation .main-navigation__link:hover {
+    color: #E8B4B8;
+    background-color: #1c1b2979;
+    margin: auto;
+    align-items: center;
+  }
+  .main-page-header .hamburger {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,146 @@
+$primary: #67595E;
+$secondary: #ffffff;
+$third: #1c1b29;
+$fourth: #E8B4B8;
+$gradient1: #6253e1;
+$gradient2: #852D91;
+$gradient3: #37c049;
+
+.main-page-header{   
+    background-image: linear-gradient(to left, $third,$primary,$third);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    z-index: 1;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    .logo{
+        text-decoration: none;
+        color: $secondary;
+        font-family: sans-serif;
+        font-size: 1.3rem;
+        padding: 1rem;
+
+
+        .logoimg{
+            height: 50px;
+
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .hamburger{
+        color: #ffffff;
+        padding: 1.6rem;
+        opacity: 1;
+        position: absolute;
+        right: 0px;
+        font-size: 2rem;
+        
+    }
+
+    .hamburger:hover{
+        color:  $fourth;
+        -webkit-transition: 0.5s ease-in-out;
+        transition: 0.5s ease-in-out;
+    }
+
+    .navigation-container{
+        display: none;
+        margin-right: 0px;
+    }
+
+    .main-navigation{
+        display: flex;
+        flex-direction: row;
+       
+       
+
+        .main-navigation__link{
+            padding: 2.1rem;
+            color:$secondary;
+            font-family: sans-serif;
+            
+        }
+        .main-navigation__link:hover{
+            color: $secondary;
+            text-decoration: underline 2px;
+            -webkit-transition: 0.2s ease-in-out;
+            transition: 0.2s ease-in-out;
+            
+            font-family: sans-serif;
+            transform: scale(1.03);
+            
+        }
+    }
+    
+//Media Queries
+    /*
+        Tablet og oppover
+    */
+    @media  screen and (min-width: 768px) {
+
+ 
+        .hamburger{
+            display: none;
+            
+        }
+        
+        .navigation-container{
+            display: block;
+
+            
+            
+        }
+    }
+
+    
+
+    @media screen and(max-width:767px){
+        .navigation-container{
+            display: none;
+            max-height: 5rem;
+            
+
+            .main-navigation{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5.1rem;
+                background-image: linear-gradient(to left, $third,$primary,$third);
+                
+                
+
+                .main-navigation__link{
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    margin-top: 0rem;
+                    border: 1px solid $third;
+                    color: $secondary;
+                }
+
+                .main-navigation__link:hover{
+                        color: $fourth;
+                        background-color: #1c1b2979;
+                        margin: auto;
+                        align-items: center;
+
+                    }
+                
+            }
+        }
+
+        .hamburger{
+            display: block;
+        }
+
+       
+    }
+}
