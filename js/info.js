@@ -1,36 +1,36 @@
 var unitedPlayers = [
     {
-        name: "David De Gea",  age: "30", from: "Spain", position: "Keeper"
+        Navn: "David De Gea",  Alder: "30", Land: "Spain", posisjon: "Målvakt"
     },
     {
-        name: "Raphael Varane",  age: "28", from: "France", position: "Defender"
+        Navn: "Raphael Varane",  Alder: "28", Land: "France", position: "Defender"
     },
     {
-        name: "Harry Maguire",  age: "28", from: "England", position: "Defenderk"
+        Navn: "Harry Maguire",  Alder: "28", Land: "England", position: "Defender"
     },
     {
-        name: "Aaron Wan-Bissaka",  age: "23", from: "England", position: "Defender"
+        Navn: "Aaron Wan-Bissaka",  Alder: "23", from: "England", position: "Defender"
     },
     {
-        name: "Luke Shaw",  age: "26", from: "England", position: "Defender"
+        Navn: "Luke Shaw",  Alder: "26", from: "England", position: "Defender"
     },
     {
-        name: "Frederico Rodrigues Santos",  age: "28", from: "Brazil", position: "Midfielder"
+        Navn: "Frederico Rodrigues Santos",  Alder: "28", from: "Brazil", position: "Midfielder"
     },
     {
-        name: "Paul Pogba",  age: "28", from: "France", position: "Midfielder"
+        Navn: "Paul Pogba",  Alder: "28", from: "France", position: "Midfielder"
     },
     {
-        name: "Marcus Rashford",  age: "24", from: "England", position: "Midfielder"
+        Navn: "Marcus Rashford",  Alder: "24", from: "England", position: "Midfielder"
     },
     {
-        name: "Bruno Miguel Borges Fernandes",  age: "", from: "", position: ""
+        Navn: "Bruno Miguel Borges Fernandes",  Alder: "27", from: "Portugal", position: "Midfielder"
     },
     {
-        name: "Cristiano Ronaldo dos Santos Aveiro",  age: "36", from: "Portugal", position: "Attacker"
+        Navn: "Cristiano Ronaldo dos Santos Aveiro",  Alder: "36", from: "Portugal", position: "Attacker"
     },
     {
-        name: "Cristiano Ronaldo dos Santos Aveiro",  age: "36", from: "Portugal", position: "Attacker"
+        Navn: "Edinson Cavani",  Alder: "34", from: "Uruguay", position: "Attacker"
     },
 ]
 
@@ -44,7 +44,7 @@ unitedPlayers.forEach(player => {
         <article class="players-article">
             <h3>${player.name}</h3>
             <p>Age: ${player.age}</p>
-            <p>From: ${player.country}</p>
+            <p>From: ${player.from}</p>
             <p>Position: ${player.position}</p>
         </article>
     `
@@ -62,7 +62,7 @@ let showSelected = () => {
         <article class="players-article">
             <h3>${player.name}</h3>
             <p>Age: ${player.age}</p>
-            <p>From: ${player.country}</p>
+            <p>From: ${player.from}</p>
             <p>Position: ${player.position}</p>
         </article>
     `
@@ -88,7 +88,7 @@ let showSearched = () => {
         <article class="players-article">
             <h3>${player.name}</h3>
             <p>Age: ${player.age}</p>
-            <p>From: ${player.country}</p>
+            <p>From: ${player.from}</p>
             <p>Position: ${player.position}</p>
         </article>
     `
