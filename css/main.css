@@ -150,4 +150,18 @@ table {
   .main-page-header .hamburger {
     display: block;
   }
+}
+
+article {
+  width: 300px;
+}
+article section {
+  height: 450px;
+  top: 50%;
+  left: 50%;
+}
+article section img {
+  width: 200px;
+  top: 50%;
+  left: 50%;
 }/*# sourceMappingURL=main.css.map */
