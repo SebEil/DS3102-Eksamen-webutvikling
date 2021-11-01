@@ -79,7 +79,7 @@ table {
 .main-page-header .logo .logoimg:hover {
   transform: scale(1.05);
 }
-.main-page-header .hamburger {
+.main-page-header .nav-meny {
   color: #ffffff;
   padding: 1.6rem;
   opacity: 1;
@@ -87,7 +87,7 @@ table {
   right: 0px;
   font-size: 2rem;
 }
-.main-page-header .hamburger:hover {
+.main-page-header .nav-meny:hover {
   color: #00ffeaf8;
   transition: 0.2s ease-in-out;
   transform: scale(1.1);
@@ -114,7 +114,7 @@ table {
   transform: scale(1.03);
 }
 @media screen and (min-width: 768px) {
-  .main-page-header .hamburger {
+  .main-page-header .nav-meny {
     display: none;
   }
   .main-page-header .navigation-container {
@@ -147,7 +147,7 @@ table {
     margin: auto;
     align-items: center;
   }
-  .main-page-header .hamburger {
+  .main-page-header .nav-meny {
     display: block;
   }
 }
