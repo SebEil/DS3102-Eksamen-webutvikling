@@ -12,6 +12,8 @@ $gradient3: #37c049;
 .main-footer{
     background-color: $primary;
     min-width: 360px;
+    position: fixed;
+    bottom: 0;
     
 
     .footer-text{

@@ -6,13 +6,13 @@ var unitedPlayers = [
         name: "Raphael Varane",  age: "28", country: "Frankrike", position: "Forsvarsspiller"
     },
     {
-        name: "Harry Maguire",  age: "28", country: "Engcountry", position: "Forsvarsspiller"
+        name: "Harry Maguire",  age: "28", country: "England", position: "Forsvarsspiller"
     },
     {
-        name: "Aaron Wan-Bissaka",  age: "23", country: "Engcountry", position: "Forsvarsspiller"
+        name: "Aaron Wan-Bissaka",  age: "23", country: "England", position: "Forsvarsspiller"
     },
     {
-        name: "Luke Shaw",  age: "26", country: "Engcountry", position: "Forsvarsspiller"
+        name: "Luke Shaw",  age: "26", country: "England", position: "Forsvarsspiller"
     },
     {
         name: "Frederico Rodrigues Santos",  age: "28", country: "Brazil", position: "Midtbanespiller"
@@ -21,7 +21,7 @@ var unitedPlayers = [
         name: "Paul Pogba",  age: "28", country: "France", position: "Midtbanespiller"
     },
     {
-        name: "Marcus Rashford",  age: "24", country: "Engcountry", position: "Midtbanespiller"
+        name: "Marcus Rashford",  age: "24", country: "England", position: "Midtbanespiller"
     },
     {
         name: "Bruno Miguel Borges Fernandes",  age: "27", country: "Portugal", position: "Midtbanespiller"

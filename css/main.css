@@ -205,10 +205,16 @@ article section img {
 .main-content .main-content__2 p {
   color: green;
 }
+.main-content .player-article {
+  margin: 10px;
+  padding: 2rem;
+}
 
 .main-footer {
   background-color: #67595E;
   min-width: 360px;
+  position: fixed;
+  bottom: 0;
 }
 .main-footer .footer-text {
   padding: 2rem;
