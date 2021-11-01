@@ -53,7 +53,7 @@ table {
 }
 
 .main-page-header {
-  background-image: linear-gradient(to left, #1c1b29, #67595E, #1c1b29);
+  background-image: linear-gradient(to left, black, #852237, black);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +167,7 @@ article section img {
 }
 
 body {
-  background-color: grey;
+  background-color: black;
 }
 
 .main-content {
@@ -178,7 +178,7 @@ body {
 .main-content .main-content__fotball {
   padding-top: 5.3rem;
   padding-bottom: 1rem;
-  background-color: gray;
+  background-color: black;
   /* Styling for spillerne her */
 }
 .main-content .main-content__fotball .content-header {
@@ -204,7 +204,6 @@ body {
   color: green;
 }
 .main-content .main-content__fotball .players-content {
-  align-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
   margin: auto;
@@ -219,17 +218,29 @@ body {
 .main-content .player-article {
   margin: 10px;
   padding: 3rem;
-  background-color: red;
+  background-image: linear-gradient(#ff0000, #000000);
   width: 300px;
   height: 300px;
-  border: 2px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.4px #fffdfd;
+  -webkit-clip-path: polygon(50% 0%, 90% 0, 100% 10%, 100% 90%, 90% 100%, 50% 100%, 10% 100%, 0 90%, 0 10%, 10% 0);
+          clip-path: polygon(50% 0%, 90% 0, 100% 10%, 100% 90%, 90% 100%, 50% 100%, 10% 100%, 0 90%, 0 10%, 10% 0);
+  color: white;
 }
 .main-content .player-article img {
   width: 200px;
+  height: 200px;
+  align-items: center;
+}
+.main-content .player-article h3 {
+  align-items: center;
+  margin-top: 20px;
 }
 
 .main-footer {
-  background-color: #67595E;
+  height: 150px;
+  background-image: linear-gradient(to left, black, #852237, black);
   min-width: 360px;
   position: fixed;
   bottom: 0;

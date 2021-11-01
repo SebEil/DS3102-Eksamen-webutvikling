@@ -42,10 +42,10 @@ unitedPlayers.forEach(player => {
     playerContent.innerHTML += `
         <article class="player-article">
             <img src=${player.image}>
-            <h3>${player.name}</h3>
-            <p>age: ${player.age}</p>
-            <p>country: ${player.country}</p>
-            <p>position: ${player.position}</p>
+            <h3 class="cardTitle">${player.name}</h3>
+            <p id="playerAge">age: ${player.age}</p>
+            <p id="playerCountry">country: ${player.country}</p>
+            <p id="playerPosition">position: ${player.position}</p>
         </article>
     `
 })
@@ -60,6 +60,7 @@ let showChoice = () => {
     searchPosition.forEach(player => {
         playerContent.innerHTML += `
         <article class="player-article">
+            <img src=${player.image}>
             <h3>${player.name}</h3>
             <p>age: ${player.age}</p>
             <p>country: ${player.country}</p>
@@ -86,6 +87,7 @@ let showSearchInput = () => {
     resultOfSearch.forEach(player => {
         playerContent.innerHTML += `
         <article class="player-article">
+            <img src=${player.image}>
             <h3>${player.name}</h3>
             <p>age: ${player.age}</p>
             <p>country: ${player.country}</p>

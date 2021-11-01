@@ -8,7 +8,7 @@ $gradient3: #37c049;
 $primaryNeon: #00ffeaf8;
 
 .main-page-header{   
-    background-image: linear-gradient(to left, $third,$primary,$third);
+    background-image: linear-gradient(to left, black,rgb(133, 34, 55),black);
     display: flex;
     justify-content: space-between;
     align-items: center;
