@@ -27,6 +27,72 @@ var unitedPlayers = [
         name: "Bruno Miguel Borges Fernandes",  age: "", from: "", position: ""
     },
     {
-        name: "",  age: "", from: "", position: ""
+        name: "Cristiano Ronaldo dos Santos Aveiro",  age: "36", from: "Portugal", position: "Attacker"
+    },
+    {
+        name: "Cristiano Ronaldo dos Santos Aveiro",  age: "36", from: "Portugal", position: "Attacker"
     },
 ]
+
+const playersContent = document.querySelector(".players-content")
+const selectInput = document.querySelector("#player-filter")
+const wordInput = document.querySelector("#search-input")
+
+unitedPlayers.forEach(player => {
+    console.log(player)
+    playersContent.innerHTML += `
+        <article class="players-article">
+            <h3>${player.name}</h3>
+            <p>Age: ${player.age}</p>
+            <p>From: ${player.country}</p>
+            <p>Position: ${player.position}</p>
+        </article>
+    `
+})
+
+let showSelected = () => {
+    playersContent.innerHTML = ""
+
+    let positionSearchPlayers = unitedPlayers.filter(player => {
+        return player.position === selectInput.value
+    })
+
+    positionSearchPlayers.forEach(player => {
+        playersContent.innerHTML += `
+        <article class="players-article">
+            <h3>${player.name}</h3>
+            <p>Age: ${player.age}</p>
+            <p>From: ${player.country}</p>
+            <p>Position: ${player.position}</p>
+        </article>
+    `
+    })
+}
+
+selectInput.addEventListener("input", showSelected)
+
+let showSearched = () => {
+    playersContent.innerHTML = ""
+
+    let searchWord = wordInput.value
+
+    //filter funksjon
+    const searchResult = unitedPlayers.filter(player => {
+        // returnere hele objekter som inneholder verdier som inkluderer søkeordet
+
+        return Object.values(player).some(val => val.includes(searchWord))
+    })
+
+    searchResult.forEach(player => {
+        playersContent.innerHTML += `
+        <article class="players-article">
+            <h3>${player.name}</h3>
+            <p>Age: ${player.age}</p>
+            <p>From: ${player.country}</p>
+            <p>Position: ${player.position}</p>
+        </article>
+    `
+    })
+}
+
+wordInput.addEventListener("input", showSearched)
