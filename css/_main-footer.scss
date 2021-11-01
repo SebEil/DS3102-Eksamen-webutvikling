@@ -1,0 +1,30 @@
+@use "./meyers-reset";
+
+$primary: #67595E;
+$secondary: #ffffff;
+$third: #1c1b29;
+$fourth: #E8B4B8;
+$gradient1: #6253e1;
+$gradient2: #852D91;
+$gradient3: #37c049;
+
+
+.main-footer{
+    background-color: $primary;
+    min-width: 360px;
+    
+
+    .footer-text{
+        padding: 2rem;
+        color: white;
+        text-align: left;
+    }
+
+    .footer-name{
+        padding-bottom: 3rem;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: x-large;
+    }
+}

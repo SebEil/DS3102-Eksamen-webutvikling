@@ -1,0 +1,62 @@
+.main-content{
+
+    min-width: 360px;
+
+    /* Styling for fotball content*/
+    .main-content__fotball{
+        padding-top: 5.3rem;
+        padding-bottom: 1rem;
+        background-color: gray;
+
+        .content-header{
+            height: 200px;
+            width: 100%;
+            background: rgb(206, 122, 122);
+            position: relative;
+            text-align: center;
+
+            .content-header__tekst{
+                font-size:xx-large;
+                font-weight: bold;
+                padding-top: 85px;
+                padding-bottom: 83px;
+            }
+        }
+
+        .fotball-players{
+
+            /* Styling filter her */
+            .fotball-players__label{
+                color: green;
+            }
+
+
+            .player-filter{
+                color: green;
+            }
+
+
+
+        }
+
+
+        /* Styling for spillerne her */
+        .players-content{
+           /* dummy tekst */ 
+        }
+
+
+
+    }
+    
+    /* styling for content 2 her  */
+    .main-content__2{
+        p{
+            color: green;
+        }
+    }
+
+
+
+
+}

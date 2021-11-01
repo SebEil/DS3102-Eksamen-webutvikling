@@ -164,4 +164,65 @@ article section img {
   width: 200px;
   top: 50%;
   left: 50%;
+}
+
+.main-content {
+  min-width: 360px;
+  /* Styling for fotball content*/
+  /* styling for content 2 her  */
+}
+.main-content .main-content__fotball {
+  padding-top: 5.3rem;
+  padding-bottom: 1rem;
+  background-color: gray;
+  /* Styling for spillerne her */
+}
+.main-content .main-content__fotball .content-header {
+  height: 200px;
+  width: 100%;
+  background: #ce7a7a;
+  position: relative;
+  text-align: center;
+}
+.main-content .main-content__fotball .content-header .content-header__tekst {
+  font-size: xx-large;
+  font-weight: bold;
+  padding-top: 85px;
+  padding-bottom: 83px;
+}
+.main-content .main-content__fotball .fotball-players {
+  /* Styling filter her */
+}
+.main-content .main-content__fotball .fotball-players .fotball-players__label {
+  color: green;
+}
+.main-content .main-content__fotball .fotball-players .player-filter {
+  color: green;
+}
+.main-content .main-content__fotball .players-content {
+  /* dummy tekst */
+}
+.main-content .main-content__2 p {
+  color: green;
+}
+
+.main-footer {
+  background-color: #67595E;
+  min-width: 360px;
+}
+.main-footer .footer-text {
+  padding: 2rem;
+  color: white;
+  text-align: left;
+}
+.main-footer .footer-name {
+  padding-bottom: 3rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
+body {
+  min-width: 360px;
 }/*# sourceMappingURL=main.css.map */
