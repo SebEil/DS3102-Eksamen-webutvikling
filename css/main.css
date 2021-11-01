@@ -205,10 +205,12 @@ body {
 }
 .main-content .main-content__fotball .players-content {
   display: grid;
-  grid-template-columns: auto auto auto;
-  margin-bottom: 200px;
-  margin-top: 50px;
-  /* dummy tekst */
+  grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
+  margin: auto;
+  grid-gap: 3rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 .main-content .main-content__2 p {
   color: green;
@@ -219,6 +221,7 @@ body {
   background-color: red;
   width: 300px;
   height: 300px;
+  border: 2px solid black;
 }
 .main-content .player-article img {
   width: 100px;
