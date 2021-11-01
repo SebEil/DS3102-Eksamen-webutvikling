@@ -1,98 +1,97 @@
-var unitedPlayers = [
+var unitedSpillere = [
     {
-        Navn: "David De Gea",  Alder: "30", Land: "Spain", posisjon: "Målvakt"
+        Navn: "David De Gea",  Alder: "30", Land: "Spania", Posisjon: "Målvakt"
     },
     {
-        Navn: "Raphael Varane",  Alder: "28", Land: "France", position: "Defender"
+        Navn: "Raphael Varane",  Alder: "28", Land: "Frankrike", Posisjon: "Forsvarsspiller"
     },
     {
-        Navn: "Harry Maguire",  Alder: "28", Land: "England", position: "Defender"
+        Navn: "Harry Maguire",  Alder: "28", Land: "England", Posisjon: "Forsvarsspiller"
     },
     {
-        Navn: "Aaron Wan-Bissaka",  Alder: "23", from: "England", position: "Defender"
+        Navn: "Aaron Wan-Bissaka",  Alder: "23", Land: "England", Posisjon: "Forsvarsspiller"
     },
     {
-        Navn: "Luke Shaw",  Alder: "26", from: "England", position: "Defender"
+        Navn: "Luke Shaw",  Alder: "26", Land: "England", Posisjon: "Forsvarsspiller"
     },
     {
-        Navn: "Frederico Rodrigues Santos",  Alder: "28", from: "Brazil", position: "Midfielder"
+        Navn: "Frederico Rodrigues Santos",  Alder: "28", Land: "Brazil", Posisjon: "Midtbanespiller"
     },
     {
-        Navn: "Paul Pogba",  Alder: "28", from: "France", position: "Midfielder"
+        Navn: "Paul Pogba",  Alder: "28", Land: "France", Posisjon: "Midtbanespiller"
     },
     {
-        Navn: "Marcus Rashford",  Alder: "24", from: "England", position: "Midfielder"
+        Navn: "Marcus Rashford",  Alder: "24", Land: "England", Posisjon: "Midtbanespiller"
     },
     {
-        Navn: "Bruno Miguel Borges Fernandes",  Alder: "27", from: "Portugal", position: "Midfielder"
+        Navn: "Bruno Miguel Borges Fernandes",  Alder: "27", Land: "Portugal", Posisjon: "Midtbanespiller"
     },
     {
-        Navn: "Cristiano Ronaldo dos Santos Aveiro",  Alder: "36", from: "Portugal", position: "Attacker"
+        Navn: "Cristiano Ronaldo dos Santos Aveiro",  Alder: "36", Land: "Portugal", Posisjon: "Angrepsspiller"
     },
     {
-        Navn: "Edinson Cavani",  Alder: "34", from: "Uruguay", position: "Attacker"
+        Navn: "Edinson Cavani",  Alder: "34", Land: "Uruguay", Posisjon: "Angrepsspiller"
     },
 ]
 
-const playersContent = document.querySelector(".players-content")
-const selectInput = document.querySelector("#player-filter")
-const wordInput = document.querySelector("#search-input")
+const spillerInnhold = document.querySelector(".spiller-innhold")
+const inputValg = document.querySelector("#spiller-filter")
+const inputOrd = document.querySelector("#search-input")
 
-unitedPlayers.forEach(player => {
-    console.log(player)
-    playersContent.innerHTML += `
-        <article class="players-article">
-            <h3>${player.name}</h3>
-            <p>Age: ${player.age}</p>
-            <p>From: ${player.from}</p>
-            <p>Position: ${player.position}</p>
+unitedSpillere.forEach(spiller => {
+    spillerInnhold.innerHTML += `
+        <article class="spiller-article">
+            <h3>${spiller.Navn}</h3>
+            <p>Alder: ${spiller.Alder}</p>
+            <p>Land: ${spiller.Land}</p>
+            <p>Posisjon: ${spiller.Posisjon}</p>
         </article>
     `
 })
 
-let showSelected = () => {
-    playersContent.innerHTML = ""
+let visValg = () => {
+    spillerInnhold.innerHTML = ""
 
-    let positionSearchPlayers = unitedPlayers.filter(player => {
-        return player.position === selectInput.value
+    let posisjonsSøk = unitedSpillere.filter(spiller => {
+        return spiller.Posisjon === inputValg.value
     })
 
-    positionSearchPlayers.forEach(player => {
-        playersContent.innerHTML += `
-        <article class="players-article">
-            <h3>${player.name}</h3>
-            <p>Age: ${player.age}</p>
-            <p>From: ${player.from}</p>
-            <p>Position: ${player.position}</p>
+    posisjonsSøk.forEach(spiller => {
+        spillerInnhold.innerHTML += `
+        <article class="spiller-article">
+            <h3>${spiller.Navn}</h3>
+            <p>Alder: ${spiller.Alder}</p>
+            <p>Land: ${spiller.Land}</p>
+            <p>Posisjon: ${spiller.Posisjon}</p>
         </article>
     `
     })
 }
 
-selectInput.addEventListener("input", showSelected)
+inputValg.addEventListener("input", visValg)
 
-let showSearched = () => {
-    playersContent.innerHTML = ""
+let visSøk = () => {
+    spillerInnhold.innerHTML = ""
 
-    let searchWord = wordInput.value
+    let søkeOrd = inputOrd.value
 
     //filter funksjon
-    const searchResult = unitedPlayers.filter(player => {
+    const søkeResultat = unitedSpillere.filter(spiller => {
         // returnere hele objekter som inneholder verdier som inkluderer søkeordet
 
-        return Object.values(player).some(val => val.includes(searchWord))
+        return Object.values(spiller).some(val => val.includes(søkeOrd))
     })
 
-    searchResult.forEach(player => {
-        playersContent.innerHTML += `
-        <article class="players-article">
-            <h3>${player.name}</h3>
-            <p>Age: ${player.age}</p>
-            <p>From: ${player.from}</p>
-            <p>Position: ${player.position}</p>
+    søkeResultat.forEach(spiller => {
+        spillerInnhold.innerHTML += `
+        <article class="spiller-article">
+            <h3>${spiller.Navn}</h3>
+            <p>Alder: ${spiller.Alder}</p>
+            <p>Land: ${spiller.Land}</p>
+            <p>Posisjon: ${spiller.Posisjon}</p>
         </article>
     `
     })
 }
 
-wordInput.addEventListener("input", showSearched)
+inputOrd.addEventListener("input", visSøk)
