@@ -45,6 +45,7 @@ body{
 
         /* Styling for spillerne her */
         .players-content{
+            align-content: center;
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(360px,4fr));
             margin: auto;

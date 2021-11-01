@@ -204,6 +204,7 @@ body {
   color: green;
 }
 .main-content .main-content__fotball .players-content {
+  align-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
   margin: auto;
