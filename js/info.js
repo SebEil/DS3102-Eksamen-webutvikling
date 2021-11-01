@@ -1,6 +1,6 @@
 var unitedPlayers = [
     {
-        name: "David De Gea",  age: "30", country: "Spania", position: "Målvakt"
+        name: "David De Gea",  age: "30", country: "Spania", position: "Målvakt", image: "/Img/quizlogo.png"
     },
     {
         name: "Raphael Varane",  age: "28", country: "Frankrike", position: "Forsvarsspiller"
@@ -41,6 +41,7 @@ const searchInput = document.querySelector("#search-input")
 unitedPlayers.forEach(player => {
     playerContent.innerHTML += `
         <article class="player-article">
+            <img src=${player.image}>
             <h3>${player.name}</h3>
             <p>age: ${player.age}</p>
             <p>country: ${player.country}</p>
