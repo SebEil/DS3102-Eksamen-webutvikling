@@ -203,6 +203,9 @@ body {
 .main-content .main-content__fotball .fotball-players .player-filter {
   color: green;
 }
+.main-content .main-content__fotball .fotball-players .searchLabel {
+  color: #ffffff;
+}
 .main-content .main-content__fotball .players-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
