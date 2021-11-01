@@ -166,6 +166,10 @@ article section img {
   left: 50%;
 }
 
+body {
+  background-color: grey;
+}
+
 .main-content {
   min-width: 360px;
   /* Styling for fotball content*/
@@ -200,6 +204,10 @@ article section img {
   color: green;
 }
 .main-content .main-content__fotball .players-content {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 200px;
+  margin-top: 50px;
   /* dummy tekst */
 }
 .main-content .main-content__2 p {
@@ -207,7 +215,8 @@ article section img {
 }
 .main-content .player-article {
   margin: 10px;
-  padding: 2rem;
+  padding: 3rem;
+  background-color: red;
 }
 
 .main-footer {

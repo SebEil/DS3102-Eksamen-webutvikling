@@ -1,3 +1,7 @@
+body{
+    background-color: grey;
+}
+
 .main-content{
 
     min-width: 360px;
@@ -42,7 +46,10 @@
 
         /* Styling for spillerne her */
         .players-content{
-
+            display: grid;
+            grid-template-columns: auto auto auto;
+            margin-bottom: 200px;
+            margin-top: 50px;
            /* dummy tekst */ 
         }
 
@@ -60,7 +67,8 @@
 
     .player-article{
         margin: 10px;
-        padding: 2rem;
+        padding: 3rem;
+        background-color: red;
     }
 
 }
