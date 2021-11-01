@@ -1,5 +1,5 @@
 // Dummy tekst her //
-const hamburgerMenu = document.querySelector(".hamburger");
+const navMeny = document.querySelector(".nav-meny");
 const mainNavigationContainer = document.querySelector(".navigation-container");
 
 const changeDisplay = () => {
@@ -15,4 +15,4 @@ const changeDisplay = () => {
 }
 
 
-hamburgerMenu.addEventListener("click", changeDisplay);
+navMeny.addEventListener("click", changeDisplay);
