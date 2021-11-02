@@ -52,8 +52,6 @@ unitedPlayers.forEach(player => {
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
-                <hr />
-                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `
@@ -80,8 +78,6 @@ let showChoice = () => {
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
-                <hr />
-                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `
@@ -116,8 +112,6 @@ let showSearchInput = () => {
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
-                <hr />
-                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `

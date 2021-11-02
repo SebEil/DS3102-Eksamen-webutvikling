@@ -47,7 +47,7 @@ $primaryNeon: #00ffeaf8;
     }
 
     .nav-meny:hover{
-        color:  $primaryNeon;
+        color:  rgb(255, 0, 0);
         -webkit-transition: 0.5s ease-in-out;
         transition: 0.2s ease-in-out;
         transform: scale(1.1);
@@ -71,7 +71,7 @@ $primaryNeon: #00ffeaf8;
             
         }
         .main-navigation__link:hover{
-            color: $primaryNeon;
+            color: red;
             text-decoration: underline 2px;
             -webkit-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
@@ -129,10 +129,11 @@ $primaryNeon: #00ffeaf8;
                 }
 
                 .main-navigation__link:hover{
-                        color: $primaryNeon;
+                        color: red;
                         background-color: #1c1b2979;
                         margin: auto;
                         align-items: center;
+                        list-style: none;
 
                     }
                 
