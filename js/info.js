@@ -40,13 +40,22 @@ const searchInput = document.querySelector("#search-input")
 
 unitedPlayers.forEach(player => {
     playerContent.innerHTML += `
-        <article class="player-article">
-            <img src=${player.image}>
-            <h3 class="cardTitle">${player.name}</h3>
-            <p id="playerAge">age: ${player.age}</p>
-            <p id="playerCountry">country: ${player.country}</p>
-            <p id="playerPosition">position: ${player.position}</p>
-        </article>
+        <section class="player-card">
+            <article class="player-article">
+                <img src=${player.image}>
+                <h3 class="cardTitle">${player.name}</h3>
+                <p id="playerAge">age: ${player.age}</p>
+                <p id="playerCountry">country: ${player.country}</p>
+                <p id="playerPosition">position: ${player.position}</p>
+            </article>
+            <article class="back-players-content">
+                <h1>Om spilleren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
+                tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
+            </article>
+        </section>
     `
 })
 
@@ -59,13 +68,22 @@ let showChoice = () => {
 
     searchPosition.forEach(player => {
         playerContent.innerHTML += `
-        <article class="player-article">
-            <img src=${player.image}>
-            <h3>${player.name}</h3>
-            <p>age: ${player.age}</p>
-            <p>country: ${player.country}</p>
-            <p>position: ${player.position}</p>
-        </article>
+        <section class="player-card">
+            <article class="player-article">
+                <img src=${player.image}>
+                <h3 class="cardTitle">${player.name}</h3>
+                <p id="playerAge">age: ${player.age}</p>
+                <p id="playerCountry">country: ${player.country}</p>
+                <p id="playerPosition">position: ${player.position}</p>
+            </article>
+            <article class="back-players-content">
+                <h1>Om spilleren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
+                tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
+            </article>
+        </section>
     `
     })
 }
@@ -86,13 +104,22 @@ let showSearchInput = () => {
 
     resultOfSearch.forEach(player => {
         playerContent.innerHTML += `
-        <article class="player-article">
-            <img src=${player.image}>
-            <h3>${player.name}</h3>
-            <p>age: ${player.age}</p>
-            <p>country: ${player.country}</p>
-            <p>position: ${player.position}</p>
-        </article>
+        <section class="player-card">
+            <article class="player-article">
+                <img src=${player.image}>
+                <h3 class="cardTitle">${player.name}</h3>
+                <p id="playerAge">age: ${player.age}</p>
+                <p id="playerCountry">country: ${player.country}</p>
+                <p id="playerPosition">position: ${player.position}</p>
+            </article>
+            <article class="back-players-content">
+                <h1>Om spilleren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
+                tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
+            </article>
+        </section>
     `
     })
 }
