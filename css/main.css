@@ -180,41 +180,63 @@ body {
   padding-top: 5.3rem;
   padding-bottom: 1rem;
   background-color: black;
+  min-height: 55rem;
   /* Styling for spillerne her */
 }
 .main-content .main-content__fotball .content-header {
-  height: 200px;
+  height: 500px;
   width: 100%;
-  background: #ce7a7a;
+  background-image: url("/Img/manu-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
-.main-content .main-content__fotball .content-header .content-header__tekst {
-  font-size: xx-large;
+.main-content .main-content__fotball .players-header {
+  background-image: linear-gradient(red, black);
+}
+.main-content .main-content__fotball .players-header .content-header__tekst {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
   font-weight: bold;
-  padding-top: 85px;
-  padding-bottom: 83px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .main-content .main-content__fotball .fotball-players {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   /* Styling filter her */
 }
 .main-content .main-content__fotball .fotball-players .fotball-players__label {
-  color: green;
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
 }
-.main-content .main-content__fotball .fotball-players .player-filter {
-  color: green;
+.main-content .main-content__fotball .fotball-players #player-filter {
+  color: black;
+  height: 25px;
 }
 .main-content .main-content__fotball .fotball-players .searchLabel {
   color: #ffffff;
+  padding-left: 14rem;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 5rem;
+}
+.main-content .main-content__fotball .fotball-players #search-input {
+  height: 25px;
 }
 .main-content .main-content__fotball .players-content {
   margin-top: 100px;
 }
 .main-content .main-content__fotball .players-content .player-card {
   height: 340px;
-  width: 250px;
+  width: 360px;
   transform-style: preserve-3d;
   transition: 2s ease;
   margin-bottom: 150px;
@@ -234,7 +256,7 @@ body {
 }
 .main-content .main-content__fotball .players-content .player-card .player-article-front img,
 .main-content .main-content__fotball .players-content .player-card .player-article-back img {
-  align-content: center;
+  text-align: center;
   width: 200px;
   height: 200px;
 }
@@ -246,8 +268,8 @@ body {
   height: 150px;
   background-image: linear-gradient(to left, black, #852237, black);
   min-width: 360px;
-  position: fixed;
-  bottom: 100%;
+  position: relative;
+  bottom: 0;
 }
 .main-footer .footer-text {
   padding: 2rem;
@@ -255,7 +277,6 @@ body {
   text-align: left;
 }
 .main-footer .footer-name {
-  padding-bottom: 3rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
