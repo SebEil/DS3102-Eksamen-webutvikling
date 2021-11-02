@@ -13,7 +13,7 @@ $gradient3: #37c049;
     height: 150px;
     background-image: linear-gradient(to left, black,rgb(133, 34, 55),black);
     min-width: 360px;
-    position: fixed;
+    position: relative;
     bottom: 0;
     
 
@@ -24,7 +24,7 @@ $gradient3: #37c049;
     }
 
     .footer-name{
-        padding-bottom: 3rem;
+       
         color: white;
         text-align: center;
         text-transform: uppercase;

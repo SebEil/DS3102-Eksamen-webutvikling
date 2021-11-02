@@ -11,36 +11,74 @@ body{
         padding-top: 5.3rem;
         padding-bottom: 1rem;
         background-color: black;
+        min-height: 55rem;
 
         .content-header{
-            height: 200px;
+            height: 500px;
             width: 100%;
-            background: rgb(206, 122, 122);
+            
+
+            background-image: url("/Img/manu-banner.jpg");
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
             position: relative;
             text-align: center;
 
+
+            
+        }
+
+        .players-header{
+
+            background-image: linear-gradient(red, black);
+
             .content-header__tekst{
-                font-size:xx-large;
+                text-align: center;
+                color: white;
+                font-size: 2.5rem;
                 font-weight: bold;
-                padding-top: 85px;
-                padding-bottom: 83px;
+                padding-top: 40px;
+                padding-bottom: 40px;
             }
         }
 
         .fotball-players{
 
+            text-align: center;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            
+            
+            
+
             /* Styling filter her */
             .fotball-players__label{
-                color: green;
+                color: white;
+                font-size: 2rem;
+                font-weight: 200;
+                
             }
 
 
-            .player-filter{
-                color: green;
+            #player-filter{
+                color: black;
+                height: 25px;
             }
 
             .searchLabel{
                 color: #ffffff;
+                padding-left: 14rem;
+
+                font-size: 2rem;
+                font-weight: 200; 
+                margin-top: 5rem;
+                  
+            }
+
+            #search-input {
+               height: 25px;   
             }
 
         }
@@ -53,6 +91,8 @@ body{
             margin: auto;
             grid-gap: 3rem;
             max-height: max-content; 
+            align-items: center;
+            justify-items: center;
         }
             
             

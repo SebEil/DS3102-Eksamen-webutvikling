@@ -179,32 +179,54 @@ body {
   padding-top: 5.3rem;
   padding-bottom: 1rem;
   background-color: black;
+  min-height: 55rem;
   /* Styling for spillerne her */
 }
 .main-content .main-content__fotball .content-header {
-  height: 200px;
+  height: 500px;
   width: 100%;
-  background: #ce7a7a;
+  background-image: url("/Img/manu-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   position: relative;
   text-align: center;
 }
-.main-content .main-content__fotball .content-header .content-header__tekst {
-  font-size: xx-large;
+.main-content .main-content__fotball .players-header {
+  background-image: linear-gradient(red, black);
+}
+.main-content .main-content__fotball .players-header .content-header__tekst {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
   font-weight: bold;
-  padding-top: 85px;
-  padding-bottom: 83px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .main-content .main-content__fotball .fotball-players {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   /* Styling filter her */
 }
 .main-content .main-content__fotball .fotball-players .fotball-players__label {
-  color: green;
+  color: white;
+  font-size: 2rem;
+  font-weight: 200;
 }
-.main-content .main-content__fotball .fotball-players .player-filter {
-  color: green;
+.main-content .main-content__fotball .fotball-players #player-filter {
+  color: black;
+  height: 25px;
 }
 .main-content .main-content__fotball .fotball-players .searchLabel {
   color: #ffffff;
+  padding-left: 14rem;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-top: 5rem;
+}
+.main-content .main-content__fotball .fotball-players #search-input {
+  height: 25px;
 }
 .main-content .main-content__fotball .players-content {
   display: grid;
@@ -214,6 +236,8 @@ body {
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
+  align-items: center;
+  justify-items: center;
 }
 .main-content .main-content__2 p {
   color: green;
@@ -245,7 +269,7 @@ body {
   height: 150px;
   background-image: linear-gradient(to left, black, #852237, black);
   min-width: 360px;
-  position: fixed;
+  position: relative;
   bottom: 0;
 }
 .main-footer .footer-text {
@@ -254,7 +278,6 @@ body {
   text-align: left;
 }
 .main-footer .footer-name {
-  padding-bottom: 3rem;
   color: white;
   text-align: center;
   text-transform: uppercase;
