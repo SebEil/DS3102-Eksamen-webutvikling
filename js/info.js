@@ -41,14 +41,14 @@ const searchInput = document.querySelector("#search-input")
 unitedPlayers.forEach(player => {
     playerContent.innerHTML += `
         <section class="player-card">
-            <article class="player-article">
+            <article class="player-article-front">
                 <img src=${player.image}>
                 <h3 class="cardTitle">${player.name}</h3>
                 <p id="playerAge">age: ${player.age}</p>
                 <p id="playerCountry">country: ${player.country}</p>
                 <p id="playerPosition">position: ${player.position}</p>
             </article>
-            <article class="back-players-content">
+            <article class="player-article-back">
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
