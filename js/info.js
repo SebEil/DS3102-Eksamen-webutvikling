@@ -41,17 +41,19 @@ const searchInput = document.querySelector("#search-input")
 unitedPlayers.forEach(player => {
     playerContent.innerHTML += `
         <section class="player-card">
-            <article class="player-article-front">
+            <article class="player-article">
                 <img src=${player.image}>
                 <h3 class="cardTitle">${player.name}</h3>
                 <p id="playerAge">age: ${player.age}</p>
                 <p id="playerCountry">country: ${player.country}</p>
                 <p id="playerPosition">position: ${player.position}</p>
             </article>
-            <article class="player-article-back">
+            <article class="back-players-content">
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `
@@ -78,6 +80,8 @@ let showChoice = () => {
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `
@@ -112,6 +116,8 @@ let showSearchInput = () => {
                 <h1>Om spilleren</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="click">Klikk for å snu tilbake</p>
             </article>
         </section>
     `

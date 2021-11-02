@@ -205,8 +205,6 @@ body {
   padding-bottom: 40px;
 }
 .main-content .main-content__fotball .fotball-players {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -232,36 +230,49 @@ body {
   height: 25px;
 }
 .main-content .main-content__fotball .players-content {
-  margin-top: 100px;
-}
-.main-content .main-content__fotball .players-content .player-card {
-  height: 340px;
-  width: 360px;
-  transform-style: preserve-3d;
-  transition: 2s ease;
-  margin-bottom: 150px;
-  background: linear-gradient(red, black);
-}
-.main-content .main-content__fotball .players-content .player-card:hover {
-  transform: rotateY(180deg);
-}
-.main-content .main-content__fotball .players-content .player-card .player-article-front,
-.main-content .main-content__fotball .players-content .player-card .player-article-back {
-  height: 100%;
-  width: 100%;
-}
-.main-content .main-content__fotball .players-content .player-card .player-article-front .player-article-front,
-.main-content .main-content__fotball .players-content .player-card .player-article-back .player-article-front {
-  align-content: center;
-}
-.main-content .main-content__fotball .players-content .player-card .player-article-front img,
-.main-content .main-content__fotball .players-content .player-card .player-article-back img {
-  text-align: center;
-  width: 200px;
-  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
+  margin: auto;
+  grid-gap: 3rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+  align-items: center;
+  justify-items: center;
 }
 .main-content .main-content__2 p {
   color: green;
+}
+.main-content .player-article {
+  margin: 10px;
+  padding: 3rem;
+  background-image: linear-gradient(#ff0000, #000000);
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.4px #fffdfd;
+  border-radius: 55px;
+  color: white;
+  cursor: pointer;
+}
+.main-content .player-article:hover {
+  transform: scale(1.015);
+}
+.main-content .player-article img {
+  width: 200px;
+  height: 200px;
+  align-items: center;
+}
+.main-content .player-article h3 {
+  align-items: center;
+  margin-top: 20px;
+}
+.main-content .back-players-content {
+  color: white;
+}
+.main-content .back-players-content .click {
+  color: red;
 }
 
 .main-footer {
