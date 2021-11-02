@@ -275,7 +275,6 @@ body {
 }
 
 .main-footer {
-  top: -200px;
   height: 150px;
   background-image: linear-gradient(to left, black, #852237, black);
   min-width: 360px;
