@@ -239,40 +239,44 @@ body {
   max-height: max-content;
   align-items: center;
   justify-items: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
 }
-.main-content .main-content__2 p {
-  color: green;
-}
-.main-content .player-article {
+.main-content .main-content__fotball .player-article {
   margin: 10px;
   padding: 3rem;
   background-image: linear-gradient(#ff0000, #000000);
-  width: 300px;
-  height: 300px;
-  text-align: center;
   text-transform: uppercase;
   text-shadow: 0.4px 0.4px #fffdfd;
-  border-radius: 55px;
+  border-radius: 55px 55px 0px 0px;
   color: white;
   cursor: pointer;
 }
-.main-content .player-article:hover {
+.main-content .main-content__fotball .player-article:hover {
   transform: scale(1.015);
 }
-.main-content .player-article img {
+.main-content .main-content__fotball .player-article img {
   width: 200px;
   height: 200px;
-  align-items: center;
 }
-.main-content .player-article h3 {
-  align-items: center;
+.main-content .main-content__fotball .player-article h3 {
   margin-top: 20px;
 }
-.main-content .back-players-content {
+.main-content .main-content__fotball .back-players-content {
+  margin: 10px;
+  padding: 3rem;
+  background-image: linear-gradient(black, red);
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.4px #fffdfd;
+  border-radius: 0px 0px 55px 55px;
   color: white;
+  cursor: pointer;
 }
-.main-content .back-players-content .click {
+.main-content .main-content__fotball .back-players-content .click {
   color: red;
+}
+.main-content .main-content__2 p {
+  color: green;
 }
 
 .main-footer {
