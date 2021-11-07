@@ -275,6 +275,39 @@ body {
 .main-content .main-content__fotball .back-players-content .click {
   color: red;
 }
+.main-content .main-content__fotball .player-article2 {
+  margin: 10px;
+  padding: 3rem;
+  background-image: linear-gradient(#0026ff, #000000);
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.4px #fffdfd;
+  border-radius: 55px 55px 0px 0px;
+  color: white;
+  cursor: pointer;
+}
+.main-content .main-content__fotball .player-article2:hover {
+  transform: scale(1.015);
+}
+.main-content .main-content__fotball .player-article2 img {
+  width: 200px;
+  height: 200px;
+}
+.main-content .main-content__fotball .player-article2 h3 {
+  margin-top: 20px;
+}
+.main-content .main-content__fotball .back-players-content2 {
+  margin: 10px;
+  padding: 3rem;
+  background-image: linear-gradient(black, #0026ff);
+  text-transform: uppercase;
+  text-shadow: 0.4px 0.4px #fffdfd;
+  border-radius: 0px 0px 55px 55px;
+  color: white;
+  cursor: pointer;
+}
+.main-content .main-content__fotball .back-players-content2 .click {
+  color: blue;
+}
 .main-content .main-content__2 p {
   color: green;
 }
