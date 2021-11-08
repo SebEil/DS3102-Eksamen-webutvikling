@@ -4,9 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
 </head>
 <body>
+
+
+     <!--Header + navbar-->
+     <header class="main-page-header">
+        <a class="logo" href="/html/index.html">
+            <img src="/Img/quizlogo.png" alt="" class="logoimg">
+        </a>
+        <i class="nav-meny fas fa-bars"></i>
+        <nav class="navigation-container">
+            <div class="main-navigation">
+                <a class="main-navigation__link" href="/html/index.html">Hjem</a>
+                <a class="main-navigation__link" href="#la">Kontakt</a>
+                <a class="main-navigation__link" href="/html/Page2.html">Quiz</a>
+            </div>
+        </nav>
+    </header>
+    <!--Header slutt-->
     
+    <section class="container">
+        <article id="home" class="quizArticle">
+            <h1 class="quizHeader">Velg Quiz</h1>
+            <button onclick="myFunction()" id="unitedBtn">Play MUFC <i class="far fa-play-circle"></i></button>
+            <button onclick="myFunctionLiv()" id="liverpoolBtn">Play LCFC <i class="far fa-play-circle"></i></button>
+        </article>
+
+        <article id="unitedArticle">
+            <h1>Quiz on Manchester United</h1>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+        
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+        </article>    
+        
+        <article id="liverpoolArticle">
+            <h1>Quiz on Liverpool</h1>
+            <div class="quiz-container">
+                <div id="quiz"></div>
+            </div>
+        
+            <button id="previous">Previous Question</button>
+            <button id="next">Next Question</button>
+            <button id="submit">Submit Quiz</button>
+            <div id="results"></div>
+        </article>   
+    </section>
+
+    <script src="/js/quiz.js"></script>
+
 </body>
 </html>
