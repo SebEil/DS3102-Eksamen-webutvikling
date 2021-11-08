@@ -7,13 +7,19 @@ const searchInput = document.querySelector("#search-input")
 const changeTeamLiverpool = document.querySelector("#change-team-liverpool")
 const changeTeamManu = document.querySelector("#change-team-manu")
 
+const searchbar2 = document.querySelector(".fotball-players2")
+const searchbar = document.querySelector(".fotball-players")
+//Liverpool del her
 
-
-
-//Forsøk på liverpool del her
+searchbar2.style.display = "none"
 
 let showLiverpoolPlayers = () => {
     playerContent.innerHTML = ""
+
+    
+    searchbar.style.display = "none"
+    searchbar2.style.display = "block"
+
 
     liverpoolPlayers.forEach(player => {
         playerContent.innerHTML += `
@@ -37,19 +43,103 @@ let showLiverpoolPlayers = () => {
     })
 }
 
+//knapp og display
+
+
+
+
+// display slutt
+
+
+
 
 changeTeamLiverpool.addEventListener("click", showLiverpoolPlayers)
-
-
-
-
 //Slutt på liverpool del her
 
+
+
+//Block 2
+const inputChoice2 = document.querySelector("#player-filter2")
+const searchInput2 = document.querySelector("#search-input2")
+
+
+let showChoice2 = () => {
+    playerContent.innerHTML = ""
+
+    let searchPosition = liverpoolPlayers.filter(player => {
+        return player.position === inputChoice2.value
+    })
+
+    searchPosition.forEach(player => {
+        playerContent.innerHTML += `
+        <section class="player-card">
+            <article class="player-article2">
+                <img src=${player.image}>
+                <h3 class="cardTitle">${player.name}</h3>
+                <p id="playerAge">age: ${player.age}</p>
+                <p id="playerCountry">country: ${player.country}</p>
+                <p id="playerPosition">position: ${player.position}</p>
+            </article>
+            <article class="back-players-content2">
+                <h1>Om spilleren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
+                tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="msg">Slipp for å snu tilbake</p>
+            </article>
+        </section>
+    `
+    })
+}
+
+inputChoice2.addEventListener("input", showChoice2)
+
+let showSearchInput2 = () => {
+    playerContent.innerHTML = ""
+
+    let search = searchInput2.value
+
+    //filter funksjon
+    const resultOfSearch = liverpoolPlayers.filter(player => {
+        // returnere hele objekter som inneholder verdier som inkluderer searchet
+
+        return Object.values(player).some(val => val.includes(search))
+    })
+
+    resultOfSearch.forEach(player => {
+        playerContent.innerHTML += `
+        <section class="player-card">
+            <article class="player-article2">
+                <img src=${player.image}>
+                <h3 class="cardTitle">${player.name}</h3>
+                <p id="playerAge">age: ${player.age}</p>
+                <p id="playerCountry">country: ${player.country}</p>
+                <p id="playerPosition">position: ${player.position}</p>
+            </article>
+            <article class="back-players-content2">
+                <h1>Om spilleren</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
+                tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
+                <hr />
+                <p class="msg">Slipp for å snu tilbake</p>
+            </article>
+        </section>
+    `
+    })
+}
+
+searchInput2.addEventListener("input", showSearchInput2)
+
+
+//Block 2 slutt
 
 
 
 let showManuPlayers = () => {
     playerContent.innerHTML = ""
+
+    searchbar.style.display = "block"
+    searchbar2.style.display = "none"
 
     unitedPlayers.forEach(player => {
         playerContent.innerHTML += `

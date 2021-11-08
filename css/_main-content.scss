@@ -187,8 +187,46 @@ body{
             
     
 
+    /* styling for content 2 her  */
+    .fotball-players2{
+
+        text-align: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        
+        
+        
+        
+
+        /* Styling filter her */
+        .fotball-players__label2{
+            color: white;
+            font-size: 2rem;
+            font-weight: 200;
+            
+        }
 
 
+        #player-filter2{
+            color: black;
+            height: 25px;
+        }
+
+        .searchLabel2{
+            color: #ffffff;
+            padding-left: 14rem;
+
+            font-size: 2rem;
+            font-weight: 200; 
+            margin-top: 5rem;
+              
+        }
+
+        #search-input2 {
+           height: 25px;   
+        }
+
+    }
         
 
 
@@ -198,11 +236,7 @@ body{
 
     }
     
-    /* styling for content 2 her  */
-    .main-content__2{
-        p{
-            color: green;
-        }
-    }
+    
+    
 
 }
