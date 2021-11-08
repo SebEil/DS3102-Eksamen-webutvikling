@@ -9,16 +9,31 @@ const changeTeamManu = document.querySelector("#change-team-manu")
 
 const searchbar2 = document.querySelector(".fotball-players2")
 const searchbar = document.querySelector(".fotball-players")
+const contentBanner = document.querySelector(".content-header")
+const playerHeader = document.querySelector(".players-header")
+const playerHeaderTekst = document.querySelector(".content-header__tekst")
+
+
 //Liverpool del her
 
 searchbar2.style.display = "none"
 
 let showLiverpoolPlayers = () => {
     playerContent.innerHTML = ""
-
     
     searchbar.style.display = "none"
     searchbar2.style.display = "block"
+
+    contentBanner.style.backgroundImage = "url(/Img/LiverpoolFCBanner.jpg)"
+
+    playerHeader.style.backgroundImage = "linear-gradient(blue, black)"
+
+    playerHeaderTekst.innerHTML = ""
+    playerHeaderTekst.innerHTML = "Fotballspillere for Liverpool"
+
+
+
+
 
 
     liverpoolPlayers.forEach(player => {
@@ -42,15 +57,6 @@ let showLiverpoolPlayers = () => {
     `
     })
 }
-
-//knapp og display
-
-
-
-
-// display slutt
-
-
 
 
 changeTeamLiverpool.addEventListener("click", showLiverpoolPlayers)
@@ -140,6 +146,13 @@ let showManuPlayers = () => {
 
     searchbar.style.display = "block"
     searchbar2.style.display = "none"
+
+    contentBanner.style.backgroundImage = "url(/Img/manu-banner.jpg)"
+
+    playerHeader.style.backgroundImage = "linear-gradient(red, black)"
+
+    playerHeaderTekst.innerHTML = ""
+    playerHeaderTekst.innerHTML = "Fotballspillere for Manchester United"
 
     unitedPlayers.forEach(player => {
         playerContent.innerHTML += `
