@@ -354,47 +354,92 @@ body {
 }
 
 .container {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: grid;
+  justify-content: center;
   margin-top: 200px;
+  color: white;
 }
 .container .quizHeader {
-  color: #970C10;
-  font-size: 4rem;
-  justify-content: center;
+  font-size: xx-large;
+  padding: 10px;
   text-align: center;
-  margin-bottom: 7rem;
+  font-size: 20px;
+  background-image: linear-gradient(to left, black, #852237, black);
+  color: #fff;
 }
-.container .quizHeader:hover {
-  transform: rotate(360deg);
-  transition: 1s ease;
-  cursor: none;
+.container .question {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.container .answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+.container .answers label {
+  display: block;
+  margin-bottom: 10px;
 }
 .container #unitedBtn, .container #liverpoolBtn {
-  justify-content: center;
-  text-align: center;
-  align-content: center;
-  color: black;
-  font-size: 2rem;
-  padding: 0.5rem;
-  background-color: #970C10;
-  text-decoration: none;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-}
-.container #unitedBtn:hover, .container #liverpoolBtn:hover {
-  color: white;
-  transform: scale(1.02);
-  transition: 0.5s ease;
-  text-decoration: underline;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16.6px;
+  background-color: black;
+  color: #fff;
+  border-color: wheat;
+  padding: 20px;
   cursor: pointer;
-  background-color: #8d0106;
-  border: 1px solid wheat;
+  margin-bottom: 20px;
+}
+.container #unitedBtn:hover {
+  background-image: linear-gradient(to left, #fc0ad3, black);
+}
+.container #liverpoolBtn:hover {
+  background-image: linear-gradient(to left, black, #00ccff);
+}
+.container #previous, .container #next, .container #submit {
+  font-size: 17.2px;
+  background-color: black;
+  color: #fff;
+  border-color: #fff;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.container #next:hover, .container #submit:hover {
+  background-image: linear-gradient(to right, black, black, black, black, black, green);
+}
+.container #previous:hover {
+  background-image: linear-gradient(to right, red, black, black, black, black, black);
+}
+.container .slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.container .active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+.container .quiz-container {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
 }
 .container #unitedArticle {
   display: none;
 }
 .container #liverpoolArticle {
   display: none;
+}
+.container .selectedQuiz {
+  color: white;
+  text-align: center;
+  font-size: 22px;
 }
 
 body {
