@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,6 +175,7 @@ body {
 .main-content {
   min-width: 360px;
   /* Styling for fotball content*/
+  /* styling for content 2 her  */
 }
 .main-content .main-content__fotball {
   padding-top: 5.3rem;
@@ -181,7 +183,7 @@ body {
   background-color: black;
   min-height: 55rem;
   /* Styling for spillerne her */
-  /* styling for content 2 her  */
+  /* Styling for bytte lag knapper her */
 }
 .main-content .main-content__fotball .content-header {
   height: 500px;
@@ -308,29 +310,54 @@ body {
 .main-content .main-content__fotball .back-players-content2 .click {
   color: blue;
 }
-.main-content .main-content__fotball .fotball-players2 {
+.main-content .main-content__fotball .change-team-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.main-content .main-content__fotball .change-team-container #change-team-manu, .main-content .main-content__fotball .change-team-container #change-team-liverpool {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  background-color: black;
+  color: #fff;
+  border-color: wheat;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 8rem;
+  height: 3rem;
+  padding-bottom: 2.5rem;
+  border-radius: 12px;
+}
+.main-content .main-content__fotball .change-team-container #change-team-manu:hover {
+  background-image: linear-gradient(to left, red, black);
+}
+.main-content .main-content__fotball .change-team-container #change-team-liverpool:hover {
+  background-image: linear-gradient(to left, black, #00ccff);
+}
+.main-content .fotball-players2 {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   /* Styling filter her */
 }
-.main-content .main-content__fotball .fotball-players2 .fotball-players__label2 {
+.main-content .fotball-players2 .fotball-players__label2 {
   color: white;
   font-size: 2rem;
   font-weight: 200;
 }
-.main-content .main-content__fotball .fotball-players2 #player-filter2 {
+.main-content .fotball-players2 #player-filter2 {
   color: black;
   height: 25px;
 }
-.main-content .main-content__fotball .fotball-players2 .searchLabel2 {
+.main-content .fotball-players2 .searchLabel2 {
   color: #ffffff;
   padding-left: 14rem;
   font-size: 2rem;
   font-weight: 200;
   margin-top: 5rem;
 }
-.main-content .main-content__fotball .fotball-players2 #search-input2 {
+.main-content .fotball-players2 #search-input2 {
   height: 25px;
 }
 
@@ -353,6 +380,14 @@ body {
   font-size: x-large;
 }
 
+/*
+    Boksen må bli større så tekst ikke faller utenfor når skjermen blir mindre
+*/
+@media screen and (max-width: 760px) {
+  .main-footer {
+    height: 200px;
+  }
+}
 .container {
   display: grid;
   justify-content: center;

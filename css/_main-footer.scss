@@ -31,4 +31,20 @@ $gradient3: #37c049;
         text-transform: uppercase;
         font-size: x-large;
     }
+
+    
+
 }
+
+
+//Media Queries
+    /*
+        Boksen må bli større så tekst ikke faller utenfor når skjermen blir mindre
+    */
+@media screen and(max-width:760px){
+        .main-footer{
+            height: 200px;
+        }
+
+       
+    }

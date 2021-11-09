@@ -184,8 +184,41 @@ body{
             }
         }
             
+     
+        
+        /* Styling for bytte lag knapper her */
+        .change-team-container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
             
-    
+            #change-team-manu, #change-team-liverpool { 
+                font-family: 'Work Sans', sans-serif;
+                font-size: 20px;
+                background-color: black;
+                color: #fff;
+                border-color: wheat;
+                padding: 20px;
+                cursor: pointer;
+                margin-bottom: 20px;
+                width: 8rem;
+                height: 3rem;
+                padding-bottom: 2.5rem;
+                border-radius: 12px;
+                
+            }
+
+            #change-team-manu:hover{
+                background-image: linear-gradient(to left,red,black,);
+                
+            }
+        
+            #change-team-liverpool:hover{
+                background-image: linear-gradient(to left,  black,rgb(0, 204, 255));           
+            }
+        }
+    }
 
     /* styling for content 2 her  */
     .fotball-players2{
@@ -226,6 +259,14 @@ body{
            height: 25px;   
         }
 
+
+
+
+
+
+
+
+
     }
         
 
@@ -234,9 +275,10 @@ body{
         
 
 
-    }
+    
     
     
     
 
 }
+
