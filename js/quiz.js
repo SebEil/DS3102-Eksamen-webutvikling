@@ -3,6 +3,8 @@ const quizContainerUnited = document.getElementById('quiz-united');
 const quizContainerLiverpool = document.getElementById('quiz-liverpool');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
+
+/* Array for Manchester United */
 const myQuestionsUnited = [
   {
     question: "Hvem er toppscorer for Manchester United i Champions League?",
@@ -33,6 +35,8 @@ const myQuestionsUnited = [
     correctAnswer: "d"
   }
 ];
+
+/* Array for Liverpool */
 const myQuestionsLiverpool = [
   {
     question: "Hvem er toppscorer i premier league?",
@@ -64,7 +68,17 @@ const myQuestionsLiverpool = [
   }
 ];
 
-function myFunction(){
+
+/* Funksjoner for buttons i QuizArticle */
+
+/*
+
+
+  Her er knapper for å starte quizene
+
+
+*/
+function myUnitedFunction(){
     var x = document.getElementById("unitedArticle")
     if(x.style.display ==="block"){
         x.style.display = "none"
@@ -73,8 +87,7 @@ function myFunction(){
     }
 }
 
-
-function myFunctionLiv(){
+function myLiverpoolFunction(){
   var y = document.getElementById("liverpoolArticle")
   if(y.style.display ==="block"){
       y.style.display = "none"
@@ -83,7 +96,7 @@ function myFunctionLiv(){
   }
 }
 
-(function(){
+
     // Functions
     function buildQuiz(){
       // variable to store the HTML output
@@ -246,21 +259,19 @@ function showResults(){
     }
   
   
-    // Kick things off
+    // Kjør program
     buildQuiz();
   
-    // Pagination
+    // Navigering i Quiz
     const previousButton = document.getElementById("previous");
     const nextButton = document.getElementById("next");
     const slides = document.querySelectorAll(".slide");
     let currentSlide = 0;
   
-    // Show the first slide
+    //Vis første spørsmålsslide
     showSlide(currentSlide);
   
-    // Event listeners
+    /* Event listeners */
     submitButton.addEventListener('click', showResults);
     previousButton.addEventListener("click", showPreviousSlide);
     nextButton.addEventListener("click", showNextSlide);
-  })();
-  
