@@ -29,6 +29,7 @@
     <!--Header slutt-->
     
     <section class="container">
+
         <article id="home" class="quizArticle">
             <h1 class="quizHeader">Velg Quiz</h1>
             <button onclick="myFunction()" id="unitedBtn">Play MUFC <i class="far fa-play-circle"></i></button>
@@ -38,7 +39,7 @@
         <article id="unitedArticle">
             <h1 class="selectedQuiz">Quiz on Manchester United</h1>
             <div class="quiz-container">
-                <div id="quiz"></div>
+                <div id="quiz-united"></div>
             </div>
         
             <button id="previous">Previous Question</button>
@@ -50,14 +51,16 @@
         <article id="liverpoolArticle">
             <h1 class="selectedQuiz">Quiz on Liverpool</h1>
             <div class="quiz-container">
-                <div id="quiz"></div>
+                <div id="quiz-liverpool"></div>
             </div>
         
             <button id="previous">Previous Question</button>
             <button id="next">Next Question</button>
             <button id="submit">Submit Quiz</button>
             <div id="results"></div>
-        </article>   
+        </article>  
+
+        
     </section>
 
     <script src="/js/quiz.js"></script>

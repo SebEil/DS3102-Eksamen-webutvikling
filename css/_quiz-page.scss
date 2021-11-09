@@ -29,7 +29,6 @@
       }
       .answers {
         margin-bottom: 20px;
-        text-align: left;
         display: inline-block;
       }
       .answers label{
@@ -63,7 +62,7 @@
 
       #unitedBtn:hover{
         background-image: linear-gradient(to left,rgb(252, 10, 211),black,);
-    }
+      }
 
       #liverpoolBtn:hover{
         background-image: linear-gradient(to left,  black,rgb(0, 204, 255));
@@ -154,10 +153,11 @@
         margin-right: 20px;
       }
 
-      .results{
-        justify-content: center;
+      #results{
+        color: rgb(234, 0, 255);
         text-align: center;
-        justify-items: center;
+        margin-bottom: 15px;
+        font-size: x-large;
       }
 
 }

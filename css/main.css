@@ -416,7 +416,6 @@ body {
 }
 .container .answers {
   margin-bottom: 20px;
-  text-align: left;
   display: inline-block;
 }
 .container .answers label {
@@ -518,10 +517,11 @@ body {
 .container .question {
   margin-right: 20px;
 }
-.container .results {
-  justify-content: center;
+.container #results {
+  color: #ea00ff;
   text-align: center;
-  justify-items: center;
+  margin-bottom: 15px;
+  font-size: x-large;
 }
 
 body {
