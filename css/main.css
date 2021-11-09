@@ -150,7 +150,7 @@ table {
     font-weight: bold;
     text-decoration: none;
   }
-  .main-page-header .navigation-container .main-navigation .main-navigation__link:hover {
+  .main-page-header .navigation-container .main-navigation .main-navigation__link:hover, .main-page-header .navigation-container .main-navigation .main-navigation__link:active, .main-page-header .navigation-container .main-navigation .main-navigation__link:focus {
     background-color: rgba(94, 91, 91, 0.5);
     transition: 0.2s ease-in-out;
     text-decoration: none;
@@ -370,6 +370,9 @@ body {
   height: 25px;
 }
 
+/*
+    Fikser på sizing her
+*/
 .main-footer {
   height: 150px;
   background-image: linear-gradient(to left, black, #852237, black);

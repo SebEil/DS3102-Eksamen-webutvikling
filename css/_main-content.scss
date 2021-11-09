@@ -123,13 +123,6 @@ body{
             }
         }
 
-
-
-
-
-
-        
-
         .player-article2{
             margin: 10px;
             padding: 3rem;
@@ -213,10 +206,6 @@ body{
         padding-top: 1rem;
         padding-bottom: 1rem;
         
-        
-        
-        
-
         /* Styling filter her */
         .fotball-players__label2{
             color: white;
@@ -244,27 +233,15 @@ body{
         #search-input2 {
            height: 25px;   
         }
-
-
-
-
-
-
-
-
-
     }
-        
-
-
-        
-        
-
-
-    
-    
-    
-    
-
 }
 
+//Media Queries
+    /*
+        Fikser på sizing her
+    */
+    @media screen and(max-width:760px){
+        
+        //dummy tekst
+       
+    }
