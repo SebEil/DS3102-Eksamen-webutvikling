@@ -16,24 +16,15 @@ body{
         .content-header{
             height: 500px;
             width: 100%;
-            
-
             background-image: url("/Img/manuvsliverpool2.jpg");
-
-            
-            
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
             position: relative;
-            text-align: center;
-
-
-            
+            text-align: center;         
         }
 
         .players-header{
-
             background-image: linear-gradient(red, black);
 
             .content-header__tekst{
@@ -47,22 +38,16 @@ body{
         }
 
         .fotball-players{
-
             text-align: center;
             padding-top: 1rem;
             padding-bottom: 1rem;
             
-            
-            
-
             /* Styling filter her */
             .fotball-players__label{
                 color: white;
                 font-size: 2rem;
-                font-weight: 200;
-                
+                font-weight: 200;               
             }
-
 
             #player-filter{
                 color: black;
@@ -72,11 +57,9 @@ body{
             .searchLabel{
                 color: #ffffff;
                 padding-left: 14rem;
-
                 font-size: 2rem;
                 font-weight: 200; 
-                margin-top: 5rem;
-                  
+                margin-top: 5rem;                  
             }
 
             #search-input {
@@ -90,7 +73,7 @@ body{
         .players-content{
             display: grid;
             grid-template-columns: repeat(auto-fit,minmax(360px,4fr));
-            margin: auto;
+            margin: 2rem;
             grid-gap: 3rem;
             max-height: max-content; 
             align-items: center;
