@@ -78,23 +78,32 @@ const myQuestionsLiverpool = [
 
 
 */
-function myUnitedFunction(){
-    var x = document.getElementById("unitedArticle")
-    if(x.style.display ==="block"){
-        x.style.display = "none"
-    }else{
-        x.style.display = "block"
-    }
+
+const unitedQuizBtn = document.querySelector("#unitedBtn")
+const unitedQuizBox = document.querySelector("#unitedArticle")
+
+const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
+const liverpoolQuizBox = document.querySelector("#liverpoolArticle")
+
+
+let showUnitedQuiz = () => {
+  
+  unitedQuizBox.style.display = "block"
+  liverpoolQuizBox.style.display = "none"
+
 }
 
-function myLiverpoolFunction(){
-  var y = document.getElementById("liverpoolArticle")
-  if(y.style.display ==="block"){
-      y.style.display = "none"
-  }else{
-      y.style.display = "block"
-  }
+unitedQuizBtn.addEventListener("click", showUnitedQuiz)
+
+let showLiverpoolQuiz = () => {
+  
+  unitedQuizBox.style.display = "none"
+  liverpoolQuizBox.style.display = "block"
+
 }
+
+liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
+
 
 
     // Functions
