@@ -24,8 +24,6 @@ let showLiverpoolPlayers = () => {
     searchbar.style.display = "none"
     searchbar2.style.display = "block"
 
-    contentBanner.style.backgroundImage = "url(/Img/LiverpoolFCBanner.jpg)"
-
     playerHeader.style.backgroundImage = "linear-gradient(blue, black)"
 
     playerHeaderTekst.innerHTML = ""
@@ -146,8 +144,6 @@ let showManuPlayers = () => {
 
     searchbar.style.display = "block"
     searchbar2.style.display = "none"
-
-    contentBanner.style.backgroundImage = "url(/Img/manu-banner.jpg)"
 
     playerHeader.style.backgroundImage = "linear-gradient(red, black)"
 
