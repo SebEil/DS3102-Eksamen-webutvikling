@@ -457,7 +457,7 @@ body {
   border-color: #fff;
   padding: 20px;
   cursor: pointer;
-  margin: 0 0 15px 15px;
+  margin: 20px 0 15px 15px;
 }
 .container #previous:hover, .container #next:hover, .container #submit:hover {
   transform: scale(1.02);
@@ -517,6 +517,11 @@ body {
 }
 .container .question {
   margin-right: 20px;
+}
+.container .results {
+  justify-content: center;
+  text-align: center;
+  justify-items: center;
 }
 
 body {
