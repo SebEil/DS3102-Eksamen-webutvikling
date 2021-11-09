@@ -58,7 +58,7 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 5rem;
+  min-height: 5.5rem;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -73,6 +73,7 @@ table {
   font-family: sans-serif;
   font-size: 1.3rem;
   padding: 1rem;
+  position: relative;
 }
 .main-page-header .logo .logoimg {
   height: 50px;
@@ -123,31 +124,38 @@ table {
   }
 }
 @media screen and (max-width: 767px) {
+  .main-page-header .logo {
+    position: absolute;
+  }
   .main-page-header .navigation-container {
     display: none;
     max-height: 5rem;
+    text-align: center;
   }
   .main-page-header .navigation-container .main-navigation {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 5.1rem;
     background-image: linear-gradient(to left, #1c1b29, #1c1b29);
+    width: 760px;
   }
   .main-page-header .navigation-container .main-navigation .main-navigation__link {
-    text-align: center;
     display: flex;
-    align-items: center;
-    width: 100%;
-    margin-top: 0rem;
-    border: 1px solid #1c1b29;
-    color: #ffffff;
+    flex-direction: row;
+    text-align: center;
+    padding: 2rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
   }
   .main-page-header .navigation-container .main-navigation .main-navigation__link:hover {
-    color: red;
-    background-color: #1c1b2979;
-    margin: auto;
-    align-items: center;
-    list-style: none;
+    background-color: rgba(94, 91, 91, 0.5);
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    font-family: sans-serif;
+    transform: scale(1.02);
   }
   .main-page-header .nav-meny {
     display: block;
@@ -194,6 +202,7 @@ body {
   background-size: cover;
   position: relative;
   text-align: center;
+  margin-top: -20;
 }
 .main-content .main-content__fotball .players-header {
   background-image: linear-gradient(red, black);
