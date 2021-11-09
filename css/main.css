@@ -234,7 +234,7 @@ body {
 .main-content .main-content__fotball .players-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(360px, 4fr));
-  margin: auto;
+  margin: 2rem;
   grid-gap: 3rem;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
