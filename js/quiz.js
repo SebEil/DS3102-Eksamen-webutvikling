@@ -34,7 +34,7 @@ function myFunctionLiv(){
             // ...add an HTML radio button
             answers.push(
               `<label>
-                <input type="radio" name="question${questionNumber}" value="${letter}">
+                <input type="checkbox" name="question${questionNumber}" value="${letter}">
                 ${letter} :
                 ${currentQuestion.answers[letter]}
               </label>`
@@ -77,7 +77,7 @@ function myFunctionLiv(){
           numCorrect++;
   
           // color the answers green
-          answerContainers[questionNumber].style.color = 'lightgreen';
+          answerContainers[questionNumber].style.color = 'green';
         }
         // if answer is wrong or blank
         else{
@@ -87,7 +87,7 @@ function myFunctionLiv(){
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      resultsContainer.innerHTML = `Du fikk ${numCorrect} av ${myQuestions.length} riktige`;
     }
   
     function showSlide(n) {
