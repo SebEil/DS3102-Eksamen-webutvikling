@@ -71,14 +71,6 @@ const myQuestionsLiverpool = [
 
 /* Funksjoner for buttons i QuizArticle */
 
-/*
-
-
-  Her er knapper for å starte quizene
-
-
-*/
-
 const unitedQuizBtn = document.querySelector("#unitedBtn")
 const unitedQuizBox = document.querySelector("#unitedArticle")
 

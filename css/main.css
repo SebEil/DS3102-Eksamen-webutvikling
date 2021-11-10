@@ -369,10 +369,35 @@ body {
 .main-content .fotball-players2 #search-input2 {
   height: 25px;
 }
+@media screen and (max-width: 1100px) {
+  .main-content .fotball-players {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    /* Styling filter her */
+  }
+  .main-content .fotball-players .fotball-players__label {
+    color: white;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  .main-content .fotball-players #player-filter {
+    color: black;
+    height: 25px;
+  }
+  .main-content .fotball-players .searchLabel {
+    color: #ffffff;
+    padding-left: 0px;
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 5rem;
+  }
+  .main-content .fotball-players #search-input {
+    height: 25px;
+  }
+}
 
-/*
-    Fikser på sizing her
-*/
 .main-footer {
   height: 150px;
   background-image: linear-gradient(to left, black, #852237, black);

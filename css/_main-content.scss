@@ -53,11 +53,11 @@ body{
             #player-filter{
                 color: black;
                 height: 25px;
+                padding-right: 14rem;
             }
 
             .searchLabel{
                 color: #ffffff;
-                padding-left: 14rem;
                 font-size: 2rem;
                 font-weight: 200; 
                 margin-top: 5rem;                  
@@ -218,12 +218,11 @@ body{
         #player-filter2{
             color: black;
             height: 25px;
+            padding-right: 14rem;
         }
 
         .searchLabel2{
             color: #ffffff;
-            padding-left: 14rem;
-
             font-size: 2rem;
             font-weight: 200; 
             margin-top: 5rem;
@@ -234,14 +233,25 @@ body{
            height: 25px;   
         }
     }
+
+
+
+
+    
+
 }
 
+
 //Media Queries
-    /*
-        Fikser på sizing her
-    */
-    @media screen and(max-width:760px){
-        
+    @media screen and(max-width:360px){
         //dummy tekst
-       
     }
+
+    @media screen and(max-width:1100px){
+
+        //media queries er dritt
+            
+    } 
+    
+    
+

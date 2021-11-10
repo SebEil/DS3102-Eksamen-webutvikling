@@ -29,11 +29,6 @@ let showLiverpoolPlayers = () => {
     playerHeaderTekst.innerHTML = ""
     playerHeaderTekst.innerHTML = "Fotballspillere for Liverpool"
 
-
-
-
-
-
     liverpoolPlayers.forEach(player => {
         playerContent.innerHTML += `
         <section class="player-card">
@@ -49,7 +44,7 @@ let showLiverpoolPlayers = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
@@ -59,8 +54,6 @@ let showLiverpoolPlayers = () => {
 
 changeTeamLiverpool.addEventListener("click", showLiverpoolPlayers)
 //Slutt på liverpool del her
-
-
 
 //Block 2
 const inputChoice2 = document.querySelector("#player-filter2")
@@ -89,7 +82,7 @@ let showChoice2 = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
@@ -125,7 +118,7 @@ let showSearchInput2 = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
@@ -165,7 +158,7 @@ let showManuPlayers = () => {
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                     tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                     <hr />
-                    <p class="msg">Slipp for å snu tilbake</p>
+                    <p class="msg"></p>
                 </article>
             </section>
         `
@@ -191,7 +184,7 @@ unitedPlayers.forEach(player => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
@@ -220,7 +213,7 @@ let showChoice = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
@@ -256,7 +249,7 @@ let showSearchInput = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus possimus
                 tenetur laborum vitae iusto sequi rem quas aspernatur adipisci aliquam.</p>
                 <hr />
-                <p class="msg">Slipp for å snu tilbake</p>
+                <p class="msg"></p>
             </article>
         </section>
     `
