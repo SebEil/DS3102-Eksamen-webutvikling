@@ -28,40 +28,46 @@
     </header>
     <!--Header slutt-->
     
-    <section class="container">
+    <main>
 
-        <article id="home" class="quizArticle">
-            <h1 class="quizHeader">Velg Quiz</h1>
-            <button id="unitedBtn">Play MUFC <i class="far fa-play-circle"></i></button>
-            <button id="liverpoolBtn">Play LCFC <i class="far fa-play-circle"></i></button>
-        </article>
+        <section class="container">
 
-        <article id="unitedArticle">
-            <h1 class="selectedQuiz">Quiz on Manchester United</h1>
-            <div class="quiz-container">
-                <div id="quiz-united"></div>
-            </div>
-        
-            <button id="previous">Previous Question</button>
-            <button id="next">Next Question</button>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
-        </article>    
-        
-        <article id="liverpoolArticle">
-            <h1 class="selectedQuiz">Quiz on Liverpool</h1>
-            <div class="quiz-container">
-                <div id="quiz-liverpool"></div>
-            </div>
-        
-            <button id="previous">Previous Question</button>
-            <button id="next">Next Question</button>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
-        </article>  
+            <article id="quiz" class="quizArticle">
+                <h1 class="quizHeader">Velg Quiz</h1>
+                <button id="unitedBtn">Play MUFC <i class="far fa-play-circle"></i></button>
+                <button id="liverpoolBtn">Play LCFC <i class="far fa-play-circle"></i></button>
+            </article>
+    
+            <article id="unitedArticle">
+                <h1 class="selectedQuiz">Quiz on Manchester United</h1>
+                <div class="quiz-container">
+                    <div id="quiz-united"></div>
+                </div>
+            
+                <button id="previous">Last Question</button>
+                <button id="next">Next Question</button>
+                <button id="submit">Submit Quiz</button>
+                <div id="resultsUnited"></div>
+            </article>    
+            
+            
+                <article id="liverpoolArticle">
+                    <h1 class="selectedQuiz">Quiz on Liverpool</h1>
+                    <div class="quiz-container">
+                        <div id="quiz-liverpool"></div>
+                    </div>
+                
+                    <button id="previous">Last Question</button>
+                    <button id="next">Next Question</button>
+                    <button id="submit">Submit Quiz</button>
+                    <div id="resultsLiverpool"></div>
+                </article>
+              
+        </section>
 
-        
-    </section>
+    </main>
+
+    
 
     <script src="/js/quiz.js"></script>
     <script src="/js/nav-menu.js"></script>
