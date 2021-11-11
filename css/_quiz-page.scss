@@ -1,7 +1,7 @@
 
 .container{
 
-  background-image: linear-gradient(to left, rgb(133, 34, 55),rgb(5, 116, 207),rgb(133, 34, 55));
+  background-image: linear-gradient(to left, rgb(233, 102, 102),rgb(133, 34, 55),rgb(233, 102, 102));
   margin-top: 0%;
   min-height: 1000px;
 
@@ -43,7 +43,7 @@
       &:hover{
         transform: scale(1.02);
         transition: 0.5s ease;
-        box-shadow: 0 0.01rem 0.5rem rgb(255, 4, 234);
+        box-shadow: 0 0.01rem 0.5rem rgb(8, 177, 255);
       }
     }
     #unitedBtn, #liverpoolBtn{

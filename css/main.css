@@ -398,7 +398,7 @@ body {
   }
 }
 .container {
-  background-image: linear-gradient(to left, #852237, #0574cf, #852237);
+  background-image: linear-gradient(to left, #e96666, #852237, #e96666);
   margin-top: 0%;
   min-height: 1000px;
   display: grid;
@@ -439,7 +439,7 @@ body {
 .container .answers label:hover {
   transform: scale(1.02);
   transition: 0.5s ease;
-  box-shadow: 0 0.01rem 0.5rem #ff04ea;
+  box-shadow: 0 0.01rem 0.5rem #08b1ff;
 }
 .container #unitedBtn, .container #liverpoolBtn {
   font-family: "Work Sans", sans-serif;
