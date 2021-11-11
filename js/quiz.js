@@ -149,7 +149,7 @@ function buildQuizLiverpool(){
   const outputLiverpool = [];
 myQuestionsLiverpool.forEach(
   (currentQuestion, questionNumber) => {
-
+    
     // variable to store the list of possible answers
     const answers = [];
 

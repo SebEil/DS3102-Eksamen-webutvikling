@@ -398,9 +398,15 @@ body {
   }
 }
 .container {
+  background-image: url("../Img/quizlogo.png");
+  background-repeat: repeat-y;
+  background-size: 100%;
+  background-color: #6e6565;
+  margin-top: 0%;
+  min-height: 1000px;
   display: grid;
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 0px;
   color: white;
 }
 .container .selectedQuiz {
@@ -417,7 +423,7 @@ body {
   font-size: 20px;
   background-image: linear-gradient(to left, black, #852237, black);
   color: #fff;
-  margin-top: 20px;
+  margin-top: 200px;
 }
 .container .question {
   font-size: 30px;
@@ -501,11 +507,12 @@ body {
 .container #unitedArticle {
   display: none;
   border: 2px solid white;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 .container #liverpoolArticle {
   display: none;
   border: 2px solid white;
+  margin-bottom: 100px;
 }
 .container #unitedArticle:hover, .container #liverpoolArticle:hover {
   box-shadow: 0 0.2rem 0.5rem white;
@@ -526,7 +533,7 @@ body {
 .container .question {
   margin-right: 20px;
 }
-.container #results {
+.container #resultsUnited {
   color: #ea00ff;
   text-align: center;
   margin-bottom: 15px;
