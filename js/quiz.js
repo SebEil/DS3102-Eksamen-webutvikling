@@ -1,8 +1,9 @@
 /* Variabler */
 const quizContainerUnited = document.getElementById('quiz-united');
-const quizContainerLiverpool = document.getElementById('quiz-liverpool');
 const resultsUnited = document.getElementById('resultsUnited');
 const submitButton = document.getElementById('submit');
+const quizContainerLiverpool = document.getElementById('quiz-liverpool');
+const resultsLiverpool = document.getElementById('resultsLiverpool');
 
 /* Array for Manchester United */
 const myQuestionsUnited = [
@@ -36,44 +37,42 @@ const myQuestionsUnited = [
   }
 ];
 
-/* Array for Liverpool */
+
 const myQuestionsLiverpool = [
   {
-    question: "Hvem er toppscorer i premier league?",
-    answers: {
-      a: "Mohamed Salah",
-      b: "Sadio Mane",
-      c: "Diogo Jota"
+    questionLiv: "Hvem er toppscorer for Liverpool i Champions League?",
+    answersLiv: {
+      x: "Sadio Mane",
+      y: "Mohamed Salah",
+      z: "Alisson Becker"
     },
-    correctAnswer: "a"
+    correctAnswerLiv: "y"
   },
   {
-    question: "Hvem er keeper for Liverpool?",
-    answers: {
-      a: "Virgil Van Dijk",
-      b: "Joel Matip",
-      c: "Alisson Becker"
+    questionLiv: "Hvem er keeper for Liverpool?",
+    answersLiv: {
+      x: "Jordan Henderson",
+      y: "Michael Burry",
+      z: "Alisson Becker"
     },
-    correctAnswer: "c"
+    correctAnswerLiv: "z"
   },
   {
-    question: "Hvilke av disse spillerene er en forsvarspiller?",
-    answers: {
-      a: "Trent Alexander-Arnold",
-      b: "Jordan Henderson",
-      c: "Sadio Mane",
-      d: "Roberto Firmino"
+    questionLiv: "Hvilken spiller på Liverpool har vunnet balon d'or?",
+    answersLiv: {
+      x: "Mohamed Salah",
+      y: "Steven Gerrard",
+      z: "Luis Suarez",
+      æ: "Michael Owen"
     },
-    correctAnswer: "a"
+    correctAnswerLiv: "æ"
   }
 ];
-
 
 /* Funksjoner for buttons i QuizArticle */
 
 const unitedQuizBtn = document.querySelector("#unitedBtn")
 const unitedQuizBox = document.querySelector("#unitedArticle")
-
 const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
 const liverpoolQuizBox = document.querySelector("#liverpoolArticle")
 
@@ -85,6 +84,8 @@ let showUnitedQuiz = () => {
 
 }
 unitedQuizBtn.addEventListener("click", showUnitedQuiz)
+
+
 
 let showLiverpoolQuiz = () => {
   
@@ -137,48 +138,42 @@ function buildQuizUnited(){
 quizContainerUnited.innerHTML = output.join('');
 }
 
+
 function buildQuizLiverpool(){
 
+  const outputLiv = [];
+  myQuestionsLiverpool.forEach(
+    (currentQuestionLiv, questionNumberLiv) => {
 
-  /* FIKS OUTPUT HER
-  
+      // variable to store the list of possible answers
+      const answersLiv = [];
 
-  *******************************************************************************************************************************************************************************************
-  
-  */
-  const outputLiverpool = [];
-myQuestionsLiverpool.forEach(
-  (currentQuestion, questionNumber) => {
+      // and for each available answer...
+      for(letter in currentQuestionLiv.answersLiv){
 
-    // variable to store the list of possible answers
-    const answers = [];
-
-    // and for each available answer...
-    for(letter in currentQuestion.answers){
-
-      // ...add an HTML radio button
-      answers.push(
-        `<label>
-          <input type="checkbox" name="question${questionNumber}" value="${letter}">
-          ${letter} :
-          ${currentQuestion.answers[letter]}
-        </label>`
-      );
-    }
+        // ...add an HTML radio button
+        answersLiv.push(
+          `<label>
+            <input type="checkbox" name="question${questionNumberLiv}" value="${letter}">
+            ${letter} :
+            ${currentQuestionLiv.answersLiv[letter]}
+          </label>`
+        );
+      }
       
 
     // add this question and its answers to the output
-    output.push(
+    outputLiv.push(
       `<div class="slide">
-        <div class="question"> ${currentQuestion.question} </div>
-        <div class="answers"> ${answers.join("")} </div>
+        <div class="questionLiv"> ${currentQuestionLiv.questionLiv} </div>
+        <div class="answersLiv"> ${answersLiv.join("")} </div>
       </div>`
     );
   });
 
 // finally combine our output list into one string of HTML and put it on the page
-quizContainerLiverpool.innerHTML = output.join('');
-}
+quizContainerLiverpool.innerHTML = outputLiv.join('');
+} 
          
   
 function showResultsUnited(){
@@ -284,8 +279,10 @@ function showPreviousSlide() {
 // Kjør program
 buildQuizUnited();
 
+
 buildQuizLiverpool();
-  
+
+
 // Navigering i Quiz, HENTE INN KNAPPER FRA HTML
 const previousButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
@@ -296,6 +293,6 @@ let currentSlide = 0;
 showSlide(currentSlide);
 
 /* Event listeners på knappene */
-submitButton.addEventListener('click', showResultsUnited, showResultsLiverpool);
+submitButton.addEventListener('click', showResultsUnited, showLiverpoolQuiz);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
