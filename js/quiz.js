@@ -219,6 +219,7 @@ function showResultsUnited(){
 
       // show number of correct answers out of total
       resultsUnited.innerHTML = `Du fikk ${numCorrect} av ${myQuestionsUnited.length} riktige`;
+      resultsUnited.style.border = "1px solid white";
 }
 
 /*
