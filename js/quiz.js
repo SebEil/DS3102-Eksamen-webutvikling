@@ -2,8 +2,11 @@
 const quizContainerUnited = document.getElementById('quiz-united');
 const resultsUnited = document.getElementById('resultsUnited');
 const submitButton = document.getElementById('submit');
-const quizContainerLiverpool = document.getElementById('quiz-liverpool');
-const resultsLiverpool = document.getElementById('resultsLiverpool');
+
+/*const quizContainerLiverpool = document.getElementById('quiz-liverpool');
+const resultsLiverpool = document.getElementById('resultsLiverpool'); 
+*/
+
 
 /* Array for Manchester United */
 const myQuestionsUnited = [
@@ -37,7 +40,7 @@ const myQuestionsUnited = [
   }
 ];
 
-
+/*
 const myQuestionsLiverpool = [
   {
     questionLiv: "Hvem er toppscorer for Liverpool i Champions League?",
@@ -69,24 +72,29 @@ const myQuestionsLiverpool = [
   }
 ];
 
+*/
+
 /* Funksjoner for buttons i QuizArticle */
 
 const unitedQuizBtn = document.querySelector("#unitedBtn")
 const unitedQuizBox = document.querySelector("#unitedArticle")
-const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
+
+/* const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
 const liverpoolQuizBox = document.querySelector("#liverpoolArticle")
+*/
 
 /* Vise en av quizene og skjule den andre */
 let showUnitedQuiz = () => {
   
   unitedQuizBox.style.display = "block"
-  liverpoolQuizBox.style.display = "none"
+  //liverpoolQuizBox.style.display = "none"
 
 }
 unitedQuizBtn.addEventListener("click", showUnitedQuiz)
 
 
 
+/*
 let showLiverpoolQuiz = () => {
   
   unitedQuizBox.style.display = "none"
@@ -95,6 +103,7 @@ let showLiverpoolQuiz = () => {
 }
 liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
 //slutt
+*/
 
 
 // Funksjoner
@@ -138,7 +147,7 @@ function buildQuizUnited(){
 quizContainerUnited.innerHTML = output.join('');
 }
 
-
+/*
 function buildQuizLiverpool(){
 
   const outputLiv = [];
@@ -174,6 +183,7 @@ function buildQuizLiverpool(){
 // finally combine our output list into one string of HTML and put it on the page
 quizContainerLiverpool.innerHTML = outputLiv.join('');
 } 
+*/
          
   
 function showResultsUnited(){
@@ -211,6 +221,7 @@ function showResultsUnited(){
       resultsUnited.innerHTML = `Du fikk ${numCorrect} av ${myQuestionsUnited.length} riktige`;
 }
 
+/*
 function showResultsLiverpool(){
 
     // gather answer containers from our quiz
@@ -245,6 +256,8 @@ function showResultsLiverpool(){
       // show number of correct answers out of total
       resultsLiverpool.innerHTML = `Du fikk ${numCorrect} av ${myQuestions.length} riktige`;
     }
+
+*/
   
 function showSlide(n) {
     slides[currentSlide].classList.remove('active-slide');
@@ -280,7 +293,7 @@ function showPreviousSlide() {
 buildQuizUnited();
 
 
-buildQuizLiverpool();
+//buildQuizLiverpool();
 
 
 // Navigering i Quiz, HENTE INN KNAPPER FRA HTML
@@ -293,6 +306,6 @@ let currentSlide = 0;
 showSlide(currentSlide);
 
 /* Event listeners på knappene */
-submitButton.addEventListener('click', showResultsUnited, showLiverpoolQuiz);
+submitButton.addEventListener('click', showResultsUnited, /*showLiverpoolQuiz*/);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
