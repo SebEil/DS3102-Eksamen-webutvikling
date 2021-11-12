@@ -526,6 +526,7 @@ body {
 .container label {
   border: 2px solid wheat;
   padding: 2px 20px;
+  cursor: pointer;
 }
 .container input[type=checkbox] {
   cursor: pointer;
@@ -534,10 +535,15 @@ body {
   margin-right: 20px;
 }
 .container #resultsUnited {
-  color: #ea00ff;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: #13e3ff;
   text-align: center;
   margin-bottom: 15px;
   font-size: x-large;
+}
+.container #resultsUnited:hover {
+  transform: scale(1.02);
 }
 
 body {

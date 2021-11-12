@@ -136,17 +136,25 @@
     label{
       border: 2px solid wheat;
       padding: 2px 20px;
+      cursor:pointer;
     }
     input[type=checkbox] {
-      cursor: pointer;
+      cursor:pointer;
     }
     .question{
       margin-right: 20px;
     }
     #resultsUnited{
-      color: rgb(234, 0, 255);
+      border: 2px solid white;
+      border-radius: 15px;
+      color: rgb(19, 227, 255);
       text-align: center;
       margin-bottom: 15px;
       font-size: x-large;
+
+      &:hover{
+        transform: scale(1.02);
+      }
     }
+
 }
