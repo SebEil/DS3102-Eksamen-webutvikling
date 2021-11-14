@@ -3,9 +3,9 @@ const quizContainerUnited = document.getElementById('quiz-united');
 const resultsUnited = document.getElementById('resultsUnited');
 const submitButton = document.getElementById('submit');
 
-/*const quizContainerLiverpool = document.getElementById('quiz-liverpool');
+const quizContainerLiverpool = document.getElementById('quiz-liverpool');
 const resultsLiverpool = document.getElementById('resultsLiverpool'); 
-*/
+const submitButtonLiverpool = document.getElementById('submitLiverpool');
 
 
 /* Array for Manchester United */
@@ -40,7 +40,7 @@ const myQuestionsUnited = [
   }
 ];
 
-/*
+/* Array for liverpool */
 const myQuestionsLiverpool = [
   {
     questionLiv: "Hvem er toppscorer for Liverpool i Champions League?",
@@ -72,29 +72,26 @@ const myQuestionsLiverpool = [
   }
 ];
 
-*/
+
 
 /* Funksjoner for buttons i QuizArticle */
 
 const unitedQuizBtn = document.querySelector("#unitedBtn")
 const unitedQuizBox = document.querySelector("#unitedArticle")
 
-/* const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
+const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
 const liverpoolQuizBox = document.querySelector("#liverpoolArticle")
-*/
+
 
 /* Vise en av quizene og skjule den andre */
 let showUnitedQuiz = () => {
   
   unitedQuizBox.style.display = "block"
-  //liverpoolQuizBox.style.display = "none"
+  liverpoolQuizBox.style.display = "none"
 
 }
 unitedQuizBtn.addEventListener("click", showUnitedQuiz)
 
-
-
-/*
 let showLiverpoolQuiz = () => {
   
   unitedQuizBox.style.display = "none"
@@ -102,8 +99,7 @@ let showLiverpoolQuiz = () => {
 
 }
 liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
-//slutt
-*/
+/* Vise en av quizene og skjule den andre slutt */
 
 
 // Funksjoner
@@ -146,6 +142,46 @@ function buildQuizUnited(){
 // finally combine our output list into one string of HTML and put it on the page
 quizContainerUnited.innerHTML = output.join('');
 }
+
+function buildQuizLiverpool(){
+  // variabel for å store output
+    const outputLiverpool = [];
+  
+    // forEach United spørsmål
+    myQuestionsLiverpool.forEach(
+      (currentQuestion, questionNumber) => {
+  
+        // variabel for å store mulige svar
+        const answersLiverpool = [];
+  
+        // and for each available answer...
+        for(letter in currentQuestion.answersLiverpool){
+  
+          //for hvert svar-alternativ, legg til label
+          answers.push(
+            `<label>
+              <input type="checkbox" name="question${questionNumber}" value="${letter}">
+              ${letter} :
+              ${currentQuestion.answersLiverpool[letter]}
+            </label>`
+          );
+        }
+
+        // add this question and its answers to the output
+        outputLiverpool.push(
+          `<div class="slide">
+            <div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answersLiverpool.join("")} </div>
+          </div>`
+        );
+      }
+    );
+  
+// finally combine our output list into one string of HTML and put it on the page
+quizContainerLiverpool.innerHTML = outputLiverpool.join('');
+}
+
+
 
 /*
 function buildQuizLiverpool(){
@@ -222,6 +258,42 @@ function showResultsUnited(){
       resultsUnited.style.border = "1px solid white";
 }
 
+function showResultsLiverpool(){
+  
+  // gather answer containers from our quiz
+  const answerContainersLiverpool = quizContainerLiverpool.querySelectorAll('.answersLiv');
+
+  // keep track of user's answers
+  let numCorrect = 0;
+
+  // for each question... UNITED
+  myQuestionsLiverpool.forEach( (currentQuestion, questionNumber) => {
+
+    // find selected answer
+    const answerContainerLiverpool = answerContainersLiverpool[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainerLiverpool.querySelector(selector) || {}).value;
+
+    // if answer is correct
+    if(userAnswer === currentQuestion.correctAnswer){
+      // add to the number of correct answers
+      numCorrect++;
+
+      // color the answers green
+      answerContainersLiverpool[questionNumber].style.color = 'chartreuse';
+    }
+    // if answer is wrong or blank
+    else{
+      // color the answers red
+      answerContainersLiverpool[questionNumber].style.color = 'crimson';
+    }
+  });
+
+  // show number of correct answers out of total
+  resultsLiverpool.innerHTML = `Du fikk ${numCorrect} av ${myQuestionsLiverpool.length} riktige`;
+  resultsLiverpool.style.border = "1px solid white";
+}
+
 /*
 function showResultsLiverpool(){
 
@@ -294,7 +366,7 @@ function showPreviousSlide() {
 buildQuizUnited();
 
 
-//buildQuizLiverpool();
+buildQuizLiverpool();
 
 
 // Navigering i Quiz, HENTE INN KNAPPER FRA HTML
@@ -307,6 +379,7 @@ let currentSlide = 0;
 showSlide(currentSlide);
 
 /* Event listeners på knappene */
+submitButtonLiverpool.addEventListener('click', showLiverpoolQuiz);
 submitButton.addEventListener('click', showResultsUnited, /*showLiverpoolQuiz*/);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);

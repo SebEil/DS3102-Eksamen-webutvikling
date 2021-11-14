@@ -27,11 +27,35 @@
     <!--Header slutt-->
     
     <main>
-        <section class="container">
-            <article id="quiz" class="quizArticle">
+
+        <section class="page-container">
+            <div class="quiz-container">
+                
                 <h1 class="quizHeader">Velg Quiz</h1>
                 <button id="unitedBtn">Play MUFC <i class="far fa-play-circle"></i></button>
-                <!-- <button id="liverpoolBtn">Play LCFC <i class="far fa-play-circle"></i></button> -->
+                <button id="liverpoolBtn">Play LCFC <i class="far fa-play-circle"></i></button> 
+
+                <section class="quiz-container1">
+                    <div class="quizUnited"></div>
+                    <button class="submitUnited">Submit</button>
+                    <div class="resultUnited"></div>
+                </section>
+
+                <section class="quiz-container2">
+                    <div class="quizLiverpool"></div>
+                    <button class="submitLiverpool">Submit</button>
+                    <div class="resultLiverpool"></div>
+                </section>
+
+            </div>
+        </section>
+
+
+
+        <!-- 
+        <section class="container">
+            <article id="quiz" class="quizArticle">
+                
             </article>
     
             <article id="unitedArticle">
@@ -44,10 +68,8 @@
                 <button id="next">Next Question</button>
                 <button id="submit">Submit Quiz</button>
                 <div id="resultsUnited"></div>
-            </article>    
+            </article>   
             
-           <!--
-
              <article id="liverpoolArticle">
                 <h1 class="selectedQuiz">Quiz on Liverpool</h1>
                 <div class="quiz-container-liverpool">
@@ -60,10 +82,8 @@
                 <div id="resultsLiverpool"></div>
             </article>
 
-           --> 
-           
-              
         </section>
+        -->
 
     </main>
 
@@ -72,10 +92,12 @@
         <h3 class="footer-name">QuizNight ©</h3>
     </footer>
 
-    
 
+
+
+    <script src="../js/quizz.js"></script>
 <!-- git suger -->
 
-    <script src="/js/quiz.js"></script>
+    <!-- <script src="/js/quiz.js"></script> -->
 </body>
 </html>
