@@ -142,13 +142,17 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
 
             if (userAnswerUnited === curentQuestionUnited.correctAnswerUnited){
                 numberCorrectUnited++
-                answerContainersUnited[questionNumberUnited].style.color = 'green'
+                answerContainersUnited[questionNumberUnited].style.color = 'chartreuse'
             } else {
-                answerContainersUnited[questionNumberUnited].style.color = 'red'
+                answerContainersUnited[questionNumberUnited].style.color = 'maroon'
             }
         })
 
-        resultsContainerUnited.innerHTML = `${numberCorrectUnited} out of ${myQuestionsUnited.length}`
+        resultsContainerUnited.innerHTML = `Herlig, du fikk ${numberCorrectUnited} av ${myQuestionsUnited.length} riktige!`
+
+        if(numberCorrectUnited < 3){
+          resultsContainerUnited.innerHTML = `Du må øve mer, du fikk ${numberCorrectUnited} av ${myQuestionsUnited.length} riktige.`
+        }
     }
 
     const quizContainerUnited = document.querySelector(".quizUnited")
@@ -205,13 +209,17 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
 
                 if (userAnswerLiverpool === curentQuestionLiverpool.correctAnswerLiverpool){
                     numberCorrectLiverpool++
-                    answerContainersLiverpool[questionNumberLiverpool].style.color = 'green'
+                    answerContainersLiverpool[questionNumberLiverpool].style.color = 'chartreuse'
                 } else {
-                    answerContainersLiverpool[questionNumberLiverpool].style.color = 'red'
+                    answerContainersLiverpool[questionNumberLiverpool].style.color = 'maroon'
                 }
             })
 
-            resultsContainerLiverpool.innerHTML = `${numberCorrectLiverpool} out of ${myQuestionsLiverpool.length}`
+            resultsContainerLiverpool.innerHTML = `Herlig, du fikk ${numberCorrectLiverpool} av ${myQuestionsLiverpool.length} riktige!`
+
+            if(numberCorrectLiverpool<3){
+              resultsContainerLiverpool.innerHTML = `Du må øve mer, du fikk ${numberCorrectLiverpool} av ${myQuestionsLiverpool.length} riktige.`
+            }
         }
 
         const quizContainerLiverpool = document.querySelector(".quizLiverpool")

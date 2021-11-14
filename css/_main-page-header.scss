@@ -6,9 +6,11 @@ $gradient1: #6253e1;
 $gradient2: #852D91;
 $gradient3: #37c049;
 $primaryNeon: #00ffeaf8;
+$secondaryNeon: rgb(255, 0, 242);
 
 .main-page-header{   
     background-image: linear-gradient(to left, black,rgb(133, 34, 55),black);
+    background-size: 200% 200%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,6 +20,10 @@ $primaryNeon: #00ffeaf8;
     position: fixed;
     top: 0;
     width: 100%;
+
+    &:hover{
+        animation: gradient 5s ease infinite;
+    }
 
     .logo{
         text-decoration: none;
@@ -32,7 +38,7 @@ $primaryNeon: #00ffeaf8;
             height: 50px;
 
             &:hover{
-                transform: scale(1.05);
+                transform: scale(1.1);
             }
         }
     }
@@ -69,16 +75,17 @@ $primaryNeon: #00ffeaf8;
             padding: 2.1rem;
             color:$secondary;
             font-family: sans-serif;
+            text-decoration: none;
             
         }
         .main-navigation__link:hover{
-            color: red;
-            text-decoration: underline 2px;
+            color: $secondaryNeon;
+            text-decoration: underline 3px;
             -webkit-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
             
             font-family: sans-serif;
-            transform: scale(1.03);
+            transform: scale(1.1);
             
         }
     }
@@ -148,3 +155,13 @@ $primaryNeon: #00ffeaf8;
         }
     }
 }
+
+//Animation for bakgrunn
+@keyframes gradient{
+    0%{
+      background-position: 200% 200%;
+    }50%{
+      background-position: 100% 100%;
+    }100%{
+      background-position: 200% 200%;
+    }}

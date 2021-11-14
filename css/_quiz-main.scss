@@ -6,6 +6,7 @@ body{
 
 .page-container{
     min-height: 1000px;
+    padding-top: 100px;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -21,10 +22,10 @@ body{
     text-align: center;
     border: 1px solid white;
 
-
     &:hover{
-      box-shadow: 0 2px 15px solid white;
+      box-shadow: 0 1px 15px white;
     }
+
 
 
     .quizHeader{
@@ -35,18 +36,20 @@ body{
     #unitedBtn, #liverpoolBtn{
       font-family: 'Work Sans', sans-serif;
       font-size: 16.6px;
-      background-color: black;
+      background: black;
       color: #fff;
       border-color: wheat;
       padding: 20px;
       cursor: pointer;
       margin: 20px;
+      animation: bounce 2s linear;
 
       &:hover{
         transform: scale(1.02);
         transition: 0.5s ease;
         font-weight: 500;
         box-shadow: 0 0.01rem 0.5rem white;
+
       }
     }
 
@@ -109,27 +112,9 @@ button.submitLiverpool{
   margin-top: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.resultUnited, .resultLiverpool{
+  text-align: center;
+}
 
 
 

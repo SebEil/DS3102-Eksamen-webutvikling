@@ -55,6 +55,7 @@ table {
 
 .main-page-header {
   background-image: linear-gradient(to left, black, #852237, black);
+  background-size: 200% 200%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +67,10 @@ table {
   /*
       Tablet og oppover
   */
+}
+.main-page-header:hover {
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
 }
 .main-page-header .logo {
   text-decoration: none;
@@ -79,7 +84,7 @@ table {
   height: 50px;
 }
 .main-page-header .logo .logoimg:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .main-page-header .nav-meny {
   color: #ffffff;
@@ -106,14 +111,15 @@ table {
   padding: 2.1rem;
   color: #ffffff;
   font-family: sans-serif;
+  text-decoration: none;
 }
 .main-page-header .main-navigation .main-navigation__link:hover {
-  color: red;
-  -webkit-text-decoration: underline 2px;
-          text-decoration: underline 2px;
+  color: #ff00f2;
+  -webkit-text-decoration: underline 3px;
+          text-decoration: underline 3px;
   transition: 0.2s ease-in-out;
   font-family: sans-serif;
-  transform: scale(1.03);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 768px) {
   .main-page-header .nav-meny {
@@ -162,6 +168,29 @@ table {
   }
 }
 
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 200% 200%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 200% 200%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 200% 200%;
+  }
+}
 body {
   background-color: black;
 }
@@ -392,6 +421,7 @@ body {
 
 .page-container {
   min-height: 1000px;
+  padding-top: 100px;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -408,7 +438,7 @@ body {
   border: 1px solid white;
 }
 .quiz-container:hover {
-  box-shadow: 0 2px 15px solid white;
+  box-shadow: 0 1px 15px white;
 }
 .quiz-container .quizHeader {
   color: white;
@@ -417,12 +447,14 @@ body {
 .quiz-container #unitedBtn, .quiz-container #liverpoolBtn {
   font-family: "Work Sans", sans-serif;
   font-size: 16.6px;
-  background-color: black;
+  background: black;
   color: #fff;
   border-color: wheat;
   padding: 20px;
   cursor: pointer;
   margin: 20px;
+  -webkit-animation: bounce 2s linear;
+          animation: bounce 2s linear;
 }
 .quiz-container #unitedBtn:hover, .quiz-container #liverpoolBtn:hover {
   transform: scale(1.02);
@@ -482,16 +514,8 @@ button.submitLiverpool {
   margin-top: 2rem;
 }
 
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+.resultUnited, .resultLiverpool {
+  text-align: center;
 }
 
 @keyframes gradient {
