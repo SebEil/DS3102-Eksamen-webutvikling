@@ -1,31 +1,3 @@
-/* Funksjoner for buttons i QuizArticle */
-const unitedQuizBtn = document.querySelector("#unitedBtn")
-const unitedQuizBox = document.querySelector(".quiz-container1")
-
-const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
-const liverpoolQuizBox = document.querySelector(".quiz-container2")
-
-liverpoolQuizBox.style.display = "none"
-/* Vise en av quizene og skjule den andre */
-let showUnitedQuiz = () => {
-  
-  unitedQuizBox.style.display = "block"
-  liverpoolQuizBox.style.display = "none"
-  
-
-}
-unitedQuizBtn.addEventListener("click", showUnitedQuiz)
-
-let showLiverpoolQuiz = () => {
-  
-  unitedQuizBox.style.display = "none"
-  liverpoolQuizBox.style.display = "block"
-  
-
-}
-liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
-/* Vise en av quizene og skjule den andre slutt */
-
 /* Spørsmål for United */
 const myQuestionsUnited = [
     {
@@ -92,6 +64,39 @@ const myQuestionsLiverpool = [
   
 /* Funksjon for quizene */
 (function(){
+
+
+    /* Funksjoner for buttons i QuizArticle */
+const unitedQuizBtn = document.querySelector("#unitedBtn")
+const unitedQuizBox = document.querySelector(".quiz-container1")
+
+const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
+const liverpoolQuizBox = document.querySelector(".quiz-container2")
+
+liverpoolQuizBox.style.display = "none"
+/* Vise en av quizene/reloade og skjule den andre */
+let showUnitedQuiz = () => {
+  
+  unitedQuizBox.style.display = "block"
+  liverpoolQuizBox.style.display = "none"
+  buildQuizUnited()
+  resultsContainerUnited.innerHTML = ""
+
+}
+unitedQuizBtn.addEventListener("click", showUnitedQuiz,)
+
+let showLiverpoolQuiz = () => {
+  
+  unitedQuizBox.style.display = "none"
+  liverpoolQuizBox.style.display = "block"
+  buildQuizLiverpool()
+  resultsContainerLiverpool.innerHTML = ""
+
+}
+liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
+/* Vise en av quizene og skjule den andre slutt */
+
+
 
 /* Funksjon for LUnited sin quiz */
     function buildQuizUnited(){
