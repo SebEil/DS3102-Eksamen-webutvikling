@@ -57,7 +57,7 @@ body{
     }
 
     #unitedBtn:hover{
-      background-image: linear-gradient(to left,$primary,black,);
+      background-image: linear-gradient(to left, $primary ,black);
     }
 
     #liverpoolBtn:hover{
@@ -125,7 +125,7 @@ button.submitLiverpool{
 //Media queries
   @media screen and(max-width:420px){
     .quiz-container{
-        padding: 0;
+        padding: 10rem;
         margin: 0;
         
             .questionUnited, .questionLiverpool{
@@ -147,6 +147,7 @@ button.submitLiverpool{
 @media screen and(max-width:1025px){
     .quiz-container{
         margin-bottom: 3rem;
+        max-width: 100%;
 
         .quizHeader{
             margin-top: 1rem;
