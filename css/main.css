@@ -218,6 +218,7 @@ body {
   position: relative;
   text-align: center;
   margin-top: -20;
+  opacity: 0;
 }
 .main-content .main-content__fotball .players-header {
   background-image: linear-gradient(red, black);
@@ -427,7 +428,7 @@ body {
 .page-container {
   min-height: 1000px;
   width: 100%;
-  padding-top: 100px;
+  padding: 200px 0 100px 0;
   min-width: 450;
   display: grid;
   justify-content: center;
@@ -464,8 +465,6 @@ body {
   padding: 20px;
   cursor: pointer;
   margin: 20px;
-  -webkit-animation: bounce 2s linear;
-          animation: bounce 2s linear;
 }
 .quiz-container #unitedBtn:hover, .quiz-container #liverpoolBtn:hover {
   transform: scale(1.02);

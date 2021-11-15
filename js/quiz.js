@@ -27,6 +27,26 @@ const myQuestionsUnited = [
         d: "Cristiano Ronaldo"
       },
       correctAnswerUnited: "d"
+    },
+    {
+      questionUnited: "Hvilken spiller spiller for Frankrikes nasjonallag?",
+      answersUnited: {
+        a: "Paul Pogba",
+        b: "Marcus Rashford",
+        c: "Harry Maguire",
+        d: "Cristiano Ronaldo"
+      },
+      correctAnswerUnited: "a"
+    },
+    {
+      questionUnited: "Hvem har flest kamper for Manchester United",
+      answersUnited: {
+        a: "David De Gea",
+        b: "Marcus Rashford",
+        c: "Harry Maguire",
+        d: "Victor Lindeløf"
+      },
+      correctAnswerUnited: "a"
     }
 ];
 
@@ -57,6 +77,26 @@ const myQuestionsLiverpool = [
         b: "Steven Gerrard",
         c: "Luis Suarez",
         d: "Michael Owen"
+      },
+      correctAnswerLiverpool: "d"
+    },
+    {
+      questionLiverpool: "Hvem er kaptein for Liverpool?",
+      answersLiverpool: {
+        a: "Mohamed Salah",
+        b: "Jordan Henderson",
+        c: "Trent Alexander-Arnold",
+        d: "Andy Robertson"
+      },
+      correctAnswerLiverpool: "b"
+    },
+    {
+      questionLiverpool: "Hvilken spiller på Liverpool kostet mest penger?",
+      answersLiverpool: {
+        a: "Mohamed Salah",
+        b: "Naby Keita",
+        c: "Sadio Mane",
+        d: "Virgil Van Dijk"
       },
       correctAnswerLiverpool: "d"
     }
@@ -232,13 +272,4 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
         submitLiverpool.addEventListener("click", showResultsLiverpool)
 
 })()
-
-
-
-/* Funksjon for Liverpool sin quiz */
-
-    
-
-
-
 

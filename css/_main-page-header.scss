@@ -1,15 +1,5 @@
-$primary: #67595E;
-$secondary: #ffffff;
-$third: #1c1b29;
-$fourth: #E8B4B8;
-$gradient1: #6253e1;
-$gradient2: #852D91;
-$gradient3: #37c049;
-$primaryNeon: #00ffeaf8;
-$secondaryNeon: rgb(255, 0, 242);
-
 .main-page-header{   
-    background-image: linear-gradient(to left, black,rgb(133, 34, 55),black);
+    background-image: linear-gradient(to left, black,$navPrimary,black);
     background-size: 200% 200%;
     display: flex;
     justify-content: space-between;
@@ -54,7 +44,7 @@ $secondaryNeon: rgb(255, 0, 242);
     }
 
     .nav-meny:hover{
-        color:  rgb(255, 0, 0);
+        color:  $navPrimary;
         -webkit-transition: 0.5s ease-in-out;
         transition: 0.2s ease-in-out;
         transform: scale(1.1);
@@ -73,13 +63,12 @@ $secondaryNeon: rgb(255, 0, 242);
 
         .main-navigation__link{
             padding: 2.1rem;
-            color:$secondary;
+            color: $primary;
             font-family: sans-serif;
             text-decoration: none;
             
         }
         .main-navigation__link:hover{
-            color: $secondaryNeon;
             text-decoration: underline 3px;
             -webkit-transition: 0.2s ease-in-out;
             transition: 0.2s ease-in-out;
@@ -125,7 +114,7 @@ $secondaryNeon: rgb(255, 0, 242);
                 display: flex;
                 flex-direction: column;
                 margin-top: 5.1rem;
-                background-image: linear-gradient(to left, $third,$third);
+                background-image: linear-gradient(to left, $hamBack,$hamBack);
                 width: 760px;
                 
                 .main-navigation__link{
@@ -140,7 +129,7 @@ $secondaryNeon: rgb(255, 0, 242);
                 }
                 
                 .main-navigation__link:hover, .main-navigation__link:active, .main-navigation__link:focus{
-                    background-color: rgba($color: #5e5b5b, $alpha: 0.5);
+                    background-color: $primary;
                     transition: 0.2s ease-in-out;
                     text-decoration: none;
                     font-family: sans-serif;

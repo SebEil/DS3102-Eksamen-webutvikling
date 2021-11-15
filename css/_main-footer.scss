@@ -1,18 +1,7 @@
-@use "./meyers-reset";
-
-$primary: #67595E;
-$secondary: #ffffff;
-$third: #1c1b29;
-$fourth: #E8B4B8;
-$gradient1: #6253e1;
-$gradient2: #852D91;
-$gradient3: #37c049;
-
-
 .main-footer{
     
     height: 150px;
-    background-image: linear-gradient(to left, black,rgb(133, 34, 55),black);
+    background-image: linear-gradient(to left, black,$navPrimary,black);
     min-width: 360px;
     position: relative;
     bottom: 0;

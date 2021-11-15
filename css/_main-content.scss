@@ -22,7 +22,8 @@ body{
             background-size: cover;
             position: relative;
             text-align: center;
-            margin-top: -20;         
+            margin-top: -20;
+            opacity: 0;         
         }
 
         .players-header{
@@ -201,7 +202,7 @@ body{
             }
         
             #change-team-liverpool:hover{
-                background-image: linear-gradient(to left,  black,rgb(0, 204, 255));           
+                background-image: linear-gradient(to left,  black,$secondary);           
             }
         }
     }
