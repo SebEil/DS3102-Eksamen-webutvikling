@@ -270,6 +270,7 @@ body {
   font-family: "Courier New", Courier, monospace;
 }
 .main-content .main-content__fotball .player-article {
+  max-width: 440px;
   margin: 10px;
   padding: 3rem;
   background-image: linear-gradient(#ff0000, #000000);
@@ -290,6 +291,7 @@ body {
   margin-top: 20px;
 }
 .main-content .main-content__fotball .back-players-content {
+  max-width: 440px;
   margin: 10px;
   padding: 3rem;
   background-image: linear-gradient(black, red);
@@ -303,6 +305,7 @@ body {
   color: red;
 }
 .main-content .main-content__fotball .player-article2 {
+  max-width: 440px;
   margin: 10px;
   padding: 3rem;
   background-image: linear-gradient(#0026ff, #000000);
@@ -323,6 +326,7 @@ body {
   margin-top: 20px;
 }
 .main-content .main-content__fotball .back-players-content2 {
+  max-width: 440px;
   margin: 10px;
   padding: 3rem;
   background-image: linear-gradient(black, #0026ff);
@@ -417,11 +421,14 @@ body {
   background-size: 200% 200%;
   -webkit-animation: gradient 10s ease infinite;
           animation: gradient 10s ease infinite;
+  min-width: 360px;
 }
 
 .page-container {
   min-height: 1000px;
+  width: 100%;
   padding-top: 100px;
+  min-width: 450;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -429,7 +436,11 @@ body {
 
 .quiz-container {
   padding-top: 4rem;
-  font-size: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-bottom: 2rem;
+  min-width: 360px;
+  font-size: 25px;
   font-family: sans-serif;
   color: #333;
   background-color: rgba(197, 247, 177, 0.137);
@@ -472,10 +483,12 @@ body {
   margin-bottom: 0.5rem;
   font-weight: 700;
 }
-.quiz-container .answers {
-  margin-bottom: 20px;
+.quiz-container .answersUnited, .quiz-container .answersLiverpool {
   padding: 1rem;
-  margin: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 .quiz-container .answers label {
   display: block;
@@ -527,6 +540,42 @@ button.submitLiverpool {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+@media screen and (max-width: 420px) {
+  .quiz-container {
+    padding: 0;
+    margin: 0;
+  }
+  .quiz-container .questionUnited, .quiz-container .questionLiverpool {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .quiz-container .answersUnited, .quiz-container .answersLiverpool {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .quiz-container {
+    margin-bottom: 3rem;
+  }
+  .quiz-container .quizHeader {
+    margin-top: 1rem;
+  }
+  .quiz-container .questionUnited, .quiz-container .questionLiverpool {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .quiz-container .answersUnited, .quiz-container .answersLiverpool {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-bottom: 1rem;
   }
 }
 body {

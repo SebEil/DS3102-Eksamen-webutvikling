@@ -87,6 +87,7 @@ body{
         }
 
         .player-article{
+            max-width: 440px;
             margin: 10px;
             padding: 3rem;
             background-image: linear-gradient(#ff0000, #000000);
@@ -112,6 +113,7 @@ body{
         }
 
         .back-players-content{
+            max-width: 440px;
             margin: 10px;
             padding: 3rem;
             background-image: linear-gradient(black,red);
@@ -127,6 +129,7 @@ body{
         }
 
         .player-article2{
+            max-width: 440px;
             margin: 10px;
             padding: 3rem;
             background-image: linear-gradient(#0026ff, #000000);
@@ -152,6 +155,7 @@ body{
         }
 
         .back-players-content2{
+            max-width: 440px;
             margin: 10px;
             padding: 3rem;
             background-image: linear-gradient(black, #0026ff);
@@ -244,9 +248,9 @@ body{
         //dummy tekst
     }
 
-    @media screen and(max-width:1100px){
-        
-            
+    @media screen and(max-width:1000px){
+        //dummy teskt        
+
     } 
     
     

@@ -9,7 +9,6 @@ const changeTeamManu = document.querySelector("#change-team-manu")
 
 const searchbar2 = document.querySelector(".fotball-players2")
 const searchbar = document.querySelector(".fotball-players")
-const contentBanner = document.querySelector(".content-header")
 const playerHeader = document.querySelector(".players-header")
 const playerHeaderTekst = document.querySelector(".content-header__tekst")
 
