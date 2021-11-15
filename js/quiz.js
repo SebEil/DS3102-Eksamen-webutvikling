@@ -173,6 +173,8 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
         const answerContainersUnited = quizContainerUnited.querySelectorAll(".answersUnited")
 
         let numberCorrectUnited = 0
+        let highscoreUnited = 0
+        localStorage.setItem("highscoreUnited", numberCorrectUnited)
 
         myQuestionsUnited.forEach( (curentQuestionUnited, questionNumberUnited) => {
            
@@ -188,13 +190,26 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
             }
         })
 
+        if(numberCorrectUnited > parseInt(localStorage.getItem("highscoreUnited"))){
+          localStorage.setItem("highscoreUnited", numberCorrectUnited)
+        }
+        
+        highscoreUnited = localStorage.getItem("highscoreUnited")
+
+        unitedHighscore.innerHTML = `Din forrige score er: ${highscoreUnited}`
+        
+
         resultsContainerUnited.innerHTML = `Herlig, du fikk ${numberCorrectUnited} av ${myQuestionsUnited.length} riktige!`
 
         if(numberCorrectUnited < 3){
           resultsContainerUnited.innerHTML = `Du må øve mer, du fikk ${numberCorrectUnited} av ${myQuestionsUnited.length} riktige.`
         }
+
+
     }
 
+    
+    const unitedHighscore = document.querySelector(".unitedHighscore")
     const quizContainerUnited = document.querySelector(".quizUnited")
     const submitUnited =  document.querySelector(".submitUnited")
     const resultsContainerUnited = document.querySelector(".resultUnited")
@@ -240,6 +255,8 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
             const answerContainersLiverpool = quizContainerLiverpool.querySelectorAll(".answersLiverpool")
 
             let numberCorrectLiverpool = 0
+            let highscoreLiverpool = 0
+            localStorage.setItem("highscoreLiverpool", numberCorrectLiverpool)
 
             myQuestionsLiverpool.forEach( (curentQuestionLiverpool, questionNumberLiverpool) => {
             
@@ -255,13 +272,23 @@ liverpoolQuizBtn.addEventListener("click", showLiverpoolQuiz)
                 }
             })
 
+            if(numberCorrectLiverpool > parseInt(localStorage.getItem("highscoreLiverpool"))){
+              localStorage.setItem("highscoreLiverpool", numberCorrectLiverpool)
+            }
+            
+            highscoreLiverpool = localStorage.getItem("highscoreLiverpool")
+    
+            liverpoolHighscore.innerHTML = `Din forrige score er: ${highscoreLiverpool}`
+
             resultsContainerLiverpool.innerHTML = `Herlig, du fikk ${numberCorrectLiverpool} av ${myQuestionsLiverpool.length} riktige!`
 
-            if(numberCorrectLiverpool<3){
+            if(numberCorrectLiverpool< 3){
               resultsContainerLiverpool.innerHTML = `Du må øve mer, du fikk ${numberCorrectLiverpool} av ${myQuestionsLiverpool.length} riktige.`
             }
         }
 
+
+        const liverpoolHighscore = document.querySelector(".liverpoolHighscore")
         const quizContainerLiverpool = document.querySelector(".quizLiverpool")
         const submitLiverpool =  document.querySelector(".submitLiverpool")
         const resultsContainerLiverpool = document.querySelector(".resultLiverpool")
