@@ -38,27 +38,27 @@ body{
             }
         }
 
-        .fotball-players{
+        .fotball-players__united{
             text-align: center;
             padding-top: 1rem;
             padding-bottom: 1rem;
             max-width: 100%;
             
             /* Styling filter her */
-            .fotball-players__label{
+            .fotball-players__label-united{
                 color: white;
                 font-size: 2rem;
                 font-weight: 200;               
             }
 
-            #player-filter{
+            #player-filter__united{
                 color: black;
                 height: 25px;
                 
                 
             }
 
-            .searchLabel{
+            .searchLabel__united{
                 color: #ffffff;
                 font-size: 2rem;
                 font-weight: 200;
@@ -66,7 +66,7 @@ body{
                 margin-left: 1rem;                 
             }
 
-            #search-input {
+            #search-input__united{
                height: 25px;   
             }
 
@@ -86,7 +86,7 @@ body{
             font-family: 'Courier New', Courier, monospace;
         }
 
-        .player-article{
+        .player-article__united{
             max-width: 440px;
             margin: 10px;
             padding: 3rem;
@@ -112,7 +112,7 @@ body{
             }
         }
 
-        .back-players-content{
+        .back-players-content__united{
             max-width: 440px;
             margin: 10px;
             padding: 3rem;
@@ -128,7 +128,7 @@ body{
             }
         }
 
-        .player-article2{
+        .player-article__liverpool{
             max-width: 440px;
             margin: 10px;
             padding: 3rem;
@@ -154,7 +154,7 @@ body{
             }
         }
 
-        .back-players-content2{
+        .back-players-content__liverpool{
             max-width: 440px;
             margin: 10px;
             padding: 3rem;
@@ -207,14 +207,14 @@ body{
     }
 
     /* styling for content 2 her  */
-    .fotball-players2{
+    .fotball-players__liverpool{
 
         text-align: center;
         padding-top: 1rem;
         padding-bottom: 1rem;
         
         /* Styling filter her */
-        .fotball-players__label2{
+        .fotball-players__label-liverpool{
             color: white;
             font-size: 2rem;
             font-weight: 200;
@@ -222,12 +222,12 @@ body{
         }
 
 
-        #player-filter2{
+        #player-filter__liverpool{
             color: black;
             height: 25px;
         }
 
-        .searchLabel2{
+        .searchLabel-liverpool{
             color: #ffffff;
             font-size: 2rem;
             font-weight: 200; 
@@ -235,7 +235,7 @@ body{
               
         }
 
-        #search-input2 {
+        #search-input__liverpool {
            height: 25px;   
         }
     }

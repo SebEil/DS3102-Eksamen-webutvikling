@@ -230,30 +230,30 @@ body {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.main-content .main-content__fotball .fotball-players {
+.main-content .main-content__fotball .fotball-players__united {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   max-width: 100%;
   /* Styling filter her */
 }
-.main-content .main-content__fotball .fotball-players .fotball-players__label {
+.main-content .main-content__fotball .fotball-players__united .fotball-players__label-united {
   color: white;
   font-size: 2rem;
   font-weight: 200;
 }
-.main-content .main-content__fotball .fotball-players #player-filter {
+.main-content .main-content__fotball .fotball-players__united #player-filter__united {
   color: black;
   height: 25px;
 }
-.main-content .main-content__fotball .fotball-players .searchLabel {
+.main-content .main-content__fotball .fotball-players__united .searchLabel__united {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 200;
   margin-top: 5rem;
   margin-left: 1rem;
 }
-.main-content .main-content__fotball .fotball-players #search-input {
+.main-content .main-content__fotball .fotball-players__united #search-input__united {
   height: 25px;
 }
 .main-content .main-content__fotball .players-content {
@@ -269,7 +269,7 @@ body {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
 }
-.main-content .main-content__fotball .player-article {
+.main-content .main-content__fotball .player-article__united {
   max-width: 440px;
   margin: 10px;
   padding: 3rem;
@@ -280,17 +280,17 @@ body {
   color: white;
   cursor: pointer;
 }
-.main-content .main-content__fotball .player-article:hover {
+.main-content .main-content__fotball .player-article__united:hover {
   transform: scale(1.015);
 }
-.main-content .main-content__fotball .player-article img {
+.main-content .main-content__fotball .player-article__united img {
   width: 200px;
   height: 200px;
 }
-.main-content .main-content__fotball .player-article h3 {
+.main-content .main-content__fotball .player-article__united h3 {
   margin-top: 20px;
 }
-.main-content .main-content__fotball .back-players-content {
+.main-content .main-content__fotball .back-players-content__united {
   max-width: 440px;
   margin: 10px;
   padding: 3rem;
@@ -301,10 +301,10 @@ body {
   color: white;
   cursor: pointer;
 }
-.main-content .main-content__fotball .back-players-content .click {
+.main-content .main-content__fotball .back-players-content__united .click {
   color: red;
 }
-.main-content .main-content__fotball .player-article2 {
+.main-content .main-content__fotball .player-article__liverpool {
   max-width: 440px;
   margin: 10px;
   padding: 3rem;
@@ -315,17 +315,17 @@ body {
   color: white;
   cursor: pointer;
 }
-.main-content .main-content__fotball .player-article2:hover {
+.main-content .main-content__fotball .player-article__liverpool:hover {
   transform: scale(1.015);
 }
-.main-content .main-content__fotball .player-article2 img {
+.main-content .main-content__fotball .player-article__liverpool img {
   width: 200px;
   height: 200px;
 }
-.main-content .main-content__fotball .player-article2 h3 {
+.main-content .main-content__fotball .player-article__liverpool h3 {
   margin-top: 20px;
 }
-.main-content .main-content__fotball .back-players-content2 {
+.main-content .main-content__fotball .back-players-content__liverpool {
   max-width: 440px;
   margin: 10px;
   padding: 3rem;
@@ -336,7 +336,7 @@ body {
   color: white;
   cursor: pointer;
 }
-.main-content .main-content__fotball .back-players-content2 .click {
+.main-content .main-content__fotball .back-players-content__liverpool .click {
   color: blue;
 }
 .main-content .main-content__fotball .change-team-container {
@@ -364,28 +364,28 @@ body {
 .main-content .main-content__fotball .change-team-container #change-team-liverpool:hover {
   background-image: linear-gradient(to left, black, #00ccff);
 }
-.main-content .fotball-players2 {
+.main-content .fotball-players__liverpool {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
   /* Styling filter her */
 }
-.main-content .fotball-players2 .fotball-players__label2 {
+.main-content .fotball-players__liverpool .fotball-players__label-liverpool {
   color: white;
   font-size: 2rem;
   font-weight: 200;
 }
-.main-content .fotball-players2 #player-filter2 {
+.main-content .fotball-players__liverpool #player-filter__liverpool {
   color: black;
   height: 25px;
 }
-.main-content .fotball-players2 .searchLabel2 {
+.main-content .fotball-players__liverpool .searchLabel-liverpool {
   color: #ffffff;
   font-size: 2rem;
   font-weight: 200;
   margin-top: 5rem;
 }
-.main-content .fotball-players2 #search-input2 {
+.main-content .fotball-players__liverpool #search-input__liverpool {
   height: 25px;
 }
 
