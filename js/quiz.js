@@ -108,10 +108,10 @@ const myQuestionsLiverpool = [
 
     /* Funksjoner for buttons i QuizArticle */
 const unitedQuizBtn = document.querySelector("#unitedBtn")
-const unitedQuizBox = document.querySelector(".quiz-container1")
+const unitedQuizBox = document.querySelector(".quiz-container__united")
 
 const liverpoolQuizBtn = document.querySelector("#liverpoolBtn")
-const liverpoolQuizBox = document.querySelector(".quiz-container2")
+const liverpoolQuizBox = document.querySelector(".quiz-container__liverpool")
 
 liverpoolQuizBox.style.display = "none"
 /* Vise en av quizene/reloade og skjule den andre */
