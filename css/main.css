@@ -413,6 +413,10 @@ body {
     Boksen må bli større så tekst ikke faller utenfor når skjermen blir mindre
 */
 @media screen and (max-width: 760px) {
+  .content-header{
+    display: none
+}
+
   .main-footer {
     height: 200px;
   }

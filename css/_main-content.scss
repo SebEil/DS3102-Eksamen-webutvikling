@@ -246,13 +246,12 @@ body{
 
 //Media Queries
     @media screen and(max-width:360px){
-        //dummy tekst
+        .content-header{
+            display: none
+        }
     }
 
-    @media screen and(max-width:1000px){
-        //dummy teskt        
-
-    } 
+    
     
     
 
