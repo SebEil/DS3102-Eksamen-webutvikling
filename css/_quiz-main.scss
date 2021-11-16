@@ -2,14 +2,14 @@ body{
   background-image: linear-gradient(-79deg, $primary, $secondary, $primary);
   background-size: 100% 100%;
   animation: gradient 10s ease infinite;
-  min-width: 360px;
+  min-width: 483px;
 }
 
 .page-container{
     min-height: 1000px;
     width: 100%;
     padding: 200px 0 100px 0;
-    min-width: 450;
+    min-width: 483;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body{
   .quiz-container{   
     padding: 4rem 1rem 1rem 1rem;
     margin-bottom: 2rem;
-    min-width: 360px;
+    min-width: 483;
     font-size: 25px;
     font-family: sans-serif;
     color: #333;
@@ -125,8 +125,8 @@ button.submitLiverpool{
 //Media queries
   @media screen and(max-width:420px){
     .quiz-container{
-        padding: 10rem;
-        margin: 0;
+        //padding: 10rem;
+        margin: 50%;
         
             .questionUnited, .questionLiverpool{
                 display: flex;

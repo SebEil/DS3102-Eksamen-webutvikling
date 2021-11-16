@@ -1,13 +1,12 @@
 .main-page-header{   
     background-image: linear-gradient(to left, black, $navPrimary ,black);
-    background-size: 200% 200%;
+    background-size: 100% 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 5.5rem;
     z-index: 1;
     
-    position: fixed;
     top: 0;
     width: 100%;
 
@@ -38,7 +37,7 @@
         padding: 1.6rem;
         opacity: 1;
         position: absolute;
-        right: 0px;
+        right: 0;
         font-size: 2rem;
         
     }
@@ -52,7 +51,7 @@
 
     .navigation-container{
         display: none;
-        margin-right: 0px;
+        margin-right: 0;
     }
 
     .main-navigation{
@@ -62,7 +61,7 @@
        
 
         .main-navigation__link{
-            padding: 2.1rem;
+            padding: 1rem;
             color: $primary;
             font-family: sans-serif;
             text-decoration: none;
@@ -146,11 +145,13 @@
 }
 
 //Animation for bakgrunn
+
+
 @keyframes gradient{
     0%{
-      background-position: 200% 200%;
-    }50%{
       background-position: 100% 100%;
+    }50%{
+      background-position: 50% 50%;
     }100%{
-      background-position: 200% 200%;
+      background-position: 100% 100%;
     }}

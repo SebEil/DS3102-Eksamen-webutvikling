@@ -14,11 +14,6 @@ gsap.to("#liverpoolBtn", {
     duration: 3.5
 })
 
-gsap.to('.quizHeader', {
-    scale: 1.2,
-    duration: 3,
-})
-
 gsap.to('.logoimg', {
     rotate: 360,
     duration: 2,
